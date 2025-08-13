@@ -35,4 +35,18 @@ describe('App Component', () => {
     const appElement = screen.getByText('Welcome to Our Application').closest('.App');
     expect(appElement).toBeInTheDocument();
   });
+
+  test('renders products page when navigating', () => {
+    render(<App />);
+    const productsButton = screen.getByText('Go to Products');
+    fireEvent.click(productsButton);
+    expect(screen.getByText('Products Page')).toBeInTheDocument();
+  });
+
+  test('renders about page when navigating', () => {
+    render(<App />);
+    const aboutButton = screen.getByText('Go to About');
+    fireEvent.click(aboutButton);
+    expect(screen.getByText('About Page')).toBeInTheDocument();
+  });
 });
