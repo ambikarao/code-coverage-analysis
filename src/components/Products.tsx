@@ -1,5 +1,8 @@
 import React, { useState } from 'react';
 import { useNavigate } from 'react-router-dom';
+import { Link } from 'react-router-dom';
+import productsData from './productsData';
+import { useCart } from '../CartContext';
 
 interface Product {
   id: number;
@@ -7,23 +10,14 @@ interface Product {
   price: number;
   category: string;
   inStock: boolean;
+  description: string;
 }
 
 const Products: React.FC = () => {
   const navigate = useNavigate();
   const [selectedCategory, setSelectedCategory] = useState<string>('all');
-
-  // Dummy data for products
-  const products: Product[] = [
-    { id: 1, name: 'Laptop', price: 999.99, category: 'Electronics', inStock: true },
-    { id: 2, name: 'Smartphone', price: 699.99, category: 'Electronics', inStock: true },
-    { id: 3, name: 'Headphones', price: 199.99, category: 'Electronics', inStock: false },
-    { id: 4, name: 'Coffee Mug', price: 15.99, category: 'Kitchen', inStock: true },
-    { id: 5, name: 'Blender', price: 89.99, category: 'Kitchen', inStock: true },
-    { id: 6, name: 'T-Shirt', price: 25.99, category: 'Clothing', inStock: true },
-    { id: 7, name: 'Jeans', price: 79.99, category: 'Clothing', inStock: false },
-    { id: 8, name: 'Sneakers', price: 129.99, category: 'Clothing', inStock: true },
-  ];
+  const { addToCart } = useCart();
+  const products: Product[] = productsData;
 
   const handleNavigateToHome = () => {
     navigate('/');
@@ -37,17 +31,17 @@ const Products: React.FC = () => {
     setSelectedCategory(category);
   };
 
-  const filteredProducts = selectedCategory === 'all' 
-    ? products 
-    : products.filter(product => product.category === selectedCategory);
+  const filteredProducts = selectedCategory === 'all'
+    ? products
+    : products.filter((product) => product.category === selectedCategory);
 
-  const categories = ['all', ...Array.from(new Set(products.map(p => p.category)))];
+  const categories = ['all', ...Array.from(new Set(products.map((p) => p.category)))];
 
   return (
     <div className="products-container">
       <h1>Products Page</h1>
-      <p>Browse our collection of products with dummy data.</p>
-      
+      <p>Browse our collection of products.</p>
+
       <div className="navigation-buttons">
         <button onClick={handleNavigateToHome} className="nav-button">
           Go to Home
@@ -75,10 +69,15 @@ const Products: React.FC = () => {
       <div className="products-grid">
         {filteredProducts.map((product) => (
           <div key={product.id} className={`product-card ${!product.inStock ? 'out-of-stock' : ''}`}>
-            <h3>{product.name}</h3>
+            <h3>
+              <Link to={`/products/${product.id}`}>{product.name}</Link>
+            </h3>
             <p>Price: ${product.price}</p>
             <p>Category: {product.category}</p>
             <p>Status: {product.inStock ? 'In Stock' : 'Out of Stock'}</p>
+            <button style={{ marginLeft: '1rem' }} onClick={() => addToCart(product)}>
+              Add to Cart
+            </button>
           </div>
         ))}
       </div>
@@ -86,4 +85,4 @@ const Products: React.FC = () => {
   );
 };
 
-export default Products; 
+export default Products;

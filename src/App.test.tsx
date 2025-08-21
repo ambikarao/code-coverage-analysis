@@ -7,32 +7,23 @@ describe('App Component', () => {
     render(<App />);
   });
 
-  test('renders home page by default', () => {
+  test('renders header navigation', () => {
     render(<App />);
-    
-    expect(screen.getByText('Welcome to Our Application')).toBeInTheDocument();
-    expect(screen.getByText('This is the home page with some dummy user data.')).toBeInTheDocument();
+    expect(screen.getByText('Home')).toBeInTheDocument();
+    expect(screen.getByText('Products')).toBeInTheDocument();
+    expect(screen.getByText('About')).toBeInTheDocument();
+    expect(screen.getByText('Profile')).toBeInTheDocument();
+    expect(screen.getByText('Categories')).toBeInTheDocument();
+    expect(screen.getByText('Cart Summary')).toBeInTheDocument();
   });
 
-  test('renders navigation buttons on home page', () => {
+  test('renders cart icon in header', () => {
     render(<App />);
-    
-    expect(screen.getAllByText('Go to Products')).toHaveLength(2);
-    expect(screen.getAllByText('Go to About')).toHaveLength(2);
+    expect(screen.getByText(/Cart:/)).toBeInTheDocument();
   });
 
-  test('renders users list on home page', () => {
+  test('renders main container', () => {
     render(<App />);
-    
-    expect(screen.getByText('Users List')).toBeInTheDocument();
-    expect(screen.getByText('John Doe')).toBeInTheDocument();
-    expect(screen.getByText('Jane Smith')).toBeInTheDocument();
-  });
-
-  test('app has correct structure', () => {
-    render(<App />);
-    
-    const appElement = screen.getByText('Welcome to Our Application').closest('.App');
-    expect(appElement).toBeInTheDocument();
+    expect(screen.getByRole('main')).toBeInTheDocument();
   });
 });
