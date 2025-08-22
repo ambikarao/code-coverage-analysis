@@ -1,0 +1,13 @@
+import reportWebVitals from './reportWebVitals';
+
+describe('reportWebVitals', () => {
+  test('calls the onPerfEntry function if provided', () => {
+    const mockFn = jest.fn();
+    reportWebVitals(mockFn);
+    expect(mockFn).toHaveBeenCalled();
+  });
+
+  test('does not call the onPerfEntry function if not provided', () => {
+    expect(() => reportWebVitals()).not.toThrow();
+  });
+});
