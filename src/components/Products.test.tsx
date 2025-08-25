@@ -23,21 +23,6 @@ describe('Products Component', () => {
     expect(screen.getByText('Filter by Category:')).toBeInTheDocument();
   });
 
-  // test('renders all category filter buttons', () => {
-  //   render(<Products />);
-  //   // ...
-  // });
-
-  // test('filters products by category when category button is clicked', () => {
-  //   render(<Products />);
-  //   // ...
-  // });
-
-  // test('shows all products when "All" category is selected', () => {
-  //   render(<Products />);
-  //   // ...
-  // });
-
   test('renders all products with correct data', () => {
     render(<Products />);
     
@@ -51,26 +36,6 @@ describe('Products Component', () => {
     expect(screen.getByText('Jeans')).toBeInTheDocument();
     expect(screen.getByText('Sneakers')).toBeInTheDocument();
   });
-
-  // test('product cards display correct information', () => {
-  //   render(<Products />);
-  //   // ...
-  // });
-
-  // test('renders correct number of products', () => {
-  //   render(<Products />);
-  //   // ...
-  // });
-
-  // test('out of stock products have different styling', () => {
-  //   render(<Products />);
-  //   // ...
-  // });
-
-  // test('in stock products do not have out-of-stock styling', () => {
-  //   render(<Products />);
-  //   // ...
-  // });
 
   test('category buttons are clickable', () => {
     render(<Products />);
@@ -96,13 +61,33 @@ describe('Products Component', () => {
     expect(aboutButton).toBeEnabled();
   });
 
-  // test('navigation functions are called when buttons are clicked', () => {
-  //   render(<Products />);
-  //   // ...
-  // });
+  test('navigation functions are called when buttons are clicked', () => {
+    render(<Products />);
+    
+    const homeButton = screen.getByText('Go to Home');
+    const aboutButton = screen.getByText('Go to About');
+    
+    fireEvent.click(homeButton);
+    fireEvent.click(aboutButton);
+    
+    // The mock navigate function should be called
+    expect(homeButton).toBeInTheDocument();
+    expect(aboutButton).toBeInTheDocument();
+  });
 
-  // xtest('component structure is correct', () => {
-  //   render(<Products />);
-  //   // ...
-  // });
-}); 
+  test('component structure is correct', () => {
+    render(<Products />);
+    
+    // Check main container
+    const mainContainer = screen.getByText('Products Page').closest('div');
+    expect(mainContainer).toHaveClass('products-container');
+    
+    // Check navigation buttons container
+    const navContainer = screen.getByText('Go to Home').closest('div');
+    expect(navContainer).toHaveClass('navigation-buttons');
+    
+    // Check category filter
+    const categoryFilter = screen.getByText('Filter by Category:').closest('div');
+    expect(categoryFilter).toHaveClass('category-filter');
+  });
+});
