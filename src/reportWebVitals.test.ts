@@ -11,10 +11,9 @@ describe('reportWebVitals', () => {
     expect(() => reportWebVitals()).not.toThrow();
   });
 
-  // New tests for reportWebVitals.ts
   test('calls web-vitals functions when onPerfEntry is provided', async () => {
     const mockFn = jest.fn();
     await reportWebVitals(mockFn);
-    expect(mockFn).toHaveBeenCalled(); // Ensure it calls the provided function
+    expect(mockFn).toHaveBeenCalled();
   });
 });
