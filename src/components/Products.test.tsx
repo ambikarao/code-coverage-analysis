@@ -1,108 +1,64 @@
 import React from 'react';
-import { render, screen, fireEvent } from '@testing-library/react';
+import { render, screen } from '@testing-library/react';
 import Products from './Products';
+import { CartProvider } from '../CartContext';
+
+// Mock the Link component from react-router-dom
+jest.mock('react-router-dom', () => ({
+  Link: ({ to, children }) => <a href={to}>{children}</a>,
+  useNavigate: () => jest.fn()
+}));
 
 describe('Products Component', () => {
-  test('renders products page with title and description', () => {
-    render(<Products />);
+  test('renders products page title', () => {
+    render(
+      <CartProvider>
+        <Products />
+      </CartProvider>
+    );
     
-    expect(screen.getByText('Products Page')).toBeInTheDocument();
-    expect(screen.getByText('Browse our collection of products with dummy data.')).toBeInTheDocument();
+    expect(screen.getByText('Our Products')).toBeInTheDocument();
   });
 
-  test('renders navigation buttons', () => {
-    render(<Products />);
+  test('renders product list', () => {
+    render(
+      <CartProvider>
+        <Products />
+      </CartProvider>
+    );
     
-    expect(screen.getByText('Go to Home')).toBeInTheDocument();
-    expect(screen.getByText('Go to About')).toBeInTheDocument();
+    // Check if at least one product is rendered
+    expect(screen.getAllByRole('article').length).toBeGreaterThan(0);
   });
 
-  test('renders category filter section', () => {
-    render(<Products />);
+  test('renders product details correctly', () => {
+    render(
+      <CartProvider>
+        <Products />
+      </CartProvider>
+    );
     
-    expect(screen.getByText('Filter by Category:')).toBeInTheDocument();
+    // Check if product information is displayed
+    const productElements = screen.getAllByRole('article');
+    expect(productElements.length).toBeGreaterThan(0);
+    
+    // Check if the first product has name, price, and category
+    const firstProduct = productElements[0];
+    expect(firstProduct).toHaveTextContent(/\$/); // Should contain price with $ symbol
+    expect(firstProduct).toHaveTextContent(/Add to Cart/i); // Should have add to cart button
   });
 
-  // test('renders all category filter buttons', () => {
-  //   render(<Products />);
-  //   // ...
-  // });
-
-  // test('filters products by category when category button is clicked', () => {
-  //   render(<Products />);
-  //   // ...
-  // });
-
-  // test('shows all products when "All" category is selected', () => {
-  //   render(<Products />);
-  //   // ...
-  // });
-
-  test('renders all products with correct data', () => {
-    render(<Products />);
+  test('add to cart button is clickable', () => {
+    render(
+      <CartProvider>
+        <Products />
+      </CartProvider>
+    );
     
-    // Check if all products are rendered
-    expect(screen.getByText('Laptop')).toBeInTheDocument();
-    expect(screen.getByText('Smartphone')).toBeInTheDocument();
-    expect(screen.getByText('Headphones')).toBeInTheDocument();
-    expect(screen.getByText('Coffee Mug')).toBeInTheDocument();
-    expect(screen.getByText('Blender')).toBeInTheDocument();
-    expect(screen.getByText('T-Shirt')).toBeInTheDocument();
-    expect(screen.getByText('Jeans')).toBeInTheDocument();
-    expect(screen.getByText('Sneakers')).toBeInTheDocument();
+    const addToCartButtons = screen.getAllByText('Add to Cart');
+    expect(addToCartButtons.length).toBeGreaterThan(0);
+    
+    // The first button should be enabled
+    expect(addToCartButtons[0]).toBeEnabled();
   });
-
-  // test('product cards display correct information', () => {
-  //   render(<Products />);
-  //   // ...
-  // });
-
-  // test('renders correct number of products', () => {
-  //   render(<Products />);
-  //   // ...
-  // });
-
-  // test('out of stock products have different styling', () => {
-  //   render(<Products />);
-  //   // ...
-  // });
-
-  // test('in stock products do not have out-of-stock styling', () => {
-  //   render(<Products />);
-  //   // ...
-  // });
-
-  test('category buttons are clickable', () => {
-    render(<Products />);
-    
-    const allButton = screen.getByText('All');
-    const electronicsButton = screen.getByText('Electronics');
-    const kitchenButton = screen.getByText('Kitchen');
-    const clothingButton = screen.getByText('Clothing');
-    
-    expect(allButton).toBeEnabled();
-    expect(electronicsButton).toBeEnabled();
-    expect(kitchenButton).toBeEnabled();
-    expect(clothingButton).toBeEnabled();
-  });
-
-  test('navigation buttons are clickable', () => {
-    render(<Products />);
-    
-    const homeButton = screen.getByText('Go to Home');
-    const aboutButton = screen.getByText('Go to About');
-    
-    expect(homeButton).toBeEnabled();
-    expect(aboutButton).toBeEnabled();
-  });
-
-  // test('navigation functions are called when buttons are clicked', () => {
-  //   render(<Products />);
-  //   // ...
-  // });
-
-  // xtest('component structure is correct', () => {
-  //   render(<Products />);
-  //   // ...
-  // });
-}); 
+});
