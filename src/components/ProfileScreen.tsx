@@ -25,8 +25,8 @@ const ProfileScreen: React.FC = () => {
       <div>
         <h3 style={{ marginBottom: '1rem', color: '#2d3748' }}>Order History</h3>
         <ul style={{ padding: 0, listStyle: 'none' }}>
-          {history.map((order, idx) => (
-            <li key={idx} style={{ background: '#f8f9fa', marginBottom: '0.5rem', padding: '0.7rem 1rem', borderRadius: 8, color: '#333', fontWeight: 500 }}>{order}</li>
+          {history.map((order) => (
+            <li key={order} style={{ background: '#f8f9fa', marginBottom: '0.5rem', padding: '0.7rem 1rem', borderRadius: 8, color: '#333', fontWeight: 500 }}>{order}</li>
           ))}
         </ul>
       </div>

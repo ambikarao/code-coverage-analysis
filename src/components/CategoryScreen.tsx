@@ -11,8 +11,8 @@ const CategoryScreen: React.FC = () => {
     <div>
       <h2>Product Categories</h2>
       <ul style={{ display: 'flex', gap: '1rem', listStyle: 'none', padding: 0 }}>
-        {categories.map((cat, idx) => (
-          <li key={idx}>
+        {categories.map((cat) => (
+          <li key={cat}>
             <button onClick={() => setSelected(cat)} style={{ padding: '0.5rem 1rem', borderRadius: '8px', border: selected === cat ? '2px solid #007bff' : '1px solid #ccc', background: selected === cat ? '#e3f0ff' : '#fff' }}>{cat}</button>
           </li>
         ))}
@@ -21,8 +21,8 @@ const CategoryScreen: React.FC = () => {
         <div style={{ marginTop: '2rem' }}>
           <h3>Products in {selected}</h3>
           <ul style={{ listStyle: 'none', padding: 0 }}>
-            {filtered.map((p, idx) => (
-              <li key={idx} style={{ marginBottom: '1.5rem', padding: '1rem', border: '1px solid #eee', borderRadius: '10px', background: '#f9f9f9' }}>
+            {filtered.map((p) => (
+              <li key={p.id} style={{ marginBottom: '1.5rem', padding: '1rem', border: '1px solid #eee', borderRadius: '10px', background: '#f9f9f9' }}>
                 <h4>{p.name}</h4>
                 <p>{p.description}</p>
                 <p>Price: ${p.price}</p>
