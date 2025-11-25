@@ -12,9 +12,9 @@ describe('reportWebVitals', () => {
   });
 
   // New tests for reportWebVitals.ts
-  test('calls web-vitals functions when onPerfEntry is provided', async () => {
+  test('calls web-vitals functions when onPerfEntry is provided', () => {
     const mockFn = jest.fn();
-    await reportWebVitals(mockFn);
+    reportWebVitals(mockFn);
     expect(mockFn).toHaveBeenCalled(); // Ensure it calls the provided function
   });
 });
