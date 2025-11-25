@@ -37,29 +37,40 @@ const FAQ: React.FC = () => {
       </h1>
       {faqItems.map((item, index) => (
         <div
-          key={index}
+          key={item.question}
           style={{
             marginBottom: '1rem',
             border: '1px solid #ddd',
             borderRadius: '4px'
           }}
         >
-          <div
+          <button
             onClick={() => toggleAccordion(index)}
+            onKeyDown={(e) => {
+              if (e.key === 'Enter' || e.key === ' ') {
+                e.preventDefault();
+                toggleAccordion(index);
+              }
+            }}
             style={{
               padding: '1rem',
               backgroundColor: '#f8f9fa',
+              border: 'none',
               cursor: 'pointer',
               display: 'flex',
               justifyContent: 'space-between',
-              alignItems: 'center'
+              alignItems: 'center',
+              width: '100%',
+              textAlign: 'left'
             }}
+            aria-expanded={openIndex === index}
+            aria-controls={`faq-answer-${index}`}
           >
             <h3 style={{ margin: 0 }}>{item.question}</h3>
-            <span>{openIndex === index ? '−' : '+'}</span>
-          </div>
+            <span aria-hidden="true">{openIndex === index ? '−' : '+'}</span>
+          </button>
           {openIndex === index && (
-            <div style={{ padding: '1rem', backgroundColor: '#fff' }}>
+            <div id={`faq-answer-${index}`} style={{ padding: '1rem', backgroundColor: '#fff' }}>
               <p style={{ margin: 0 }}>{item.answer}</p>
             </div>
           )}

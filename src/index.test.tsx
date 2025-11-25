@@ -17,12 +17,8 @@ root.render(
 // or send to an analytics endpoint. Learn more: https://bit.ly/CRA-vitals
 reportWebVitals();
 
+// Tests have been moved to App.test.tsx to avoid duplication
 describe('Index File', () => {
-  test('renders App component without crashing', () => {
-    const div = document.createElement('div');
-    // ReactDOM.render(<App />, div);
-    // ReactDOM.unmountComponentAtNode(div);
-  });
 
   test('reportWebVitals function is called', () => {
     const mockFn = jest.fn();

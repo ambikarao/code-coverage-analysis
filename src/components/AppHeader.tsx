@@ -29,7 +29,7 @@ const AppHeader: React.FC = () => {
       </nav>
       <Link to="/cart" style={{ textDecoration: 'none' }}>
         <div style={{ display: 'flex', alignItems: 'center', gap: '0.5rem', background: '#fff', borderRadius: '20px', padding: '0.5rem 1rem', boxShadow: '0 1px 4px rgba(0,0,0,0.07)', cursor: 'pointer' }}>
-          <span role="img" aria-label="cart" style={{ fontSize: '1.3rem' }}>🛒</span>
+          <img src="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='24' height='24' viewBox='0 0 24 24'%3E%3Cpath fill='%23007bff' d='M17%207l-6-4l-6%204v13c0%201%201%202%202%202h8c1%200%202-1%202-2z'/%3E%3C/svg%3E" alt="cart" style={{ width: '1.3rem', height: '1.3rem' }} />
           <span style={{ fontWeight: 600, color: '#007bff', fontSize: '1rem' }}>Cart: {cart.length}</span>
         </div>
       </Link>
