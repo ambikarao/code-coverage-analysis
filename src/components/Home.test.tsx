@@ -1,5 +1,5 @@
 import React from 'react';
-import { render, screen, fireEvent } from '@testing-library/react';
+import { render, screen } from '@testing-library/react';
 import Home from './Home';
 
 describe('Home Component', () => {
@@ -104,4 +104,4 @@ describe('Home Component', () => {
   //   const usersSection = screen.getByText('Users List').closest('div');
   //   expect(usersSection).toHaveClass('users-section');
   // });
-}); 
+});
