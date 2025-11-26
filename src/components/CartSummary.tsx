@@ -19,7 +19,9 @@ const CartSummary: React.FC = () => {
   const removeProduct = (id: number) => {
     const newCart = cart.filter((item) => item.id !== id);
     clearCart();
-    newCart.forEach((item) => addToCart(item));
+    for (const item of newCart) {
+      addToCart(item);
+    }
   };
 
   // Decrement quantity
@@ -33,7 +35,9 @@ const CartSummary: React.FC = () => {
       return true;
     });
     clearCart();
-    newCart.forEach((item) => addToCart(item));
+    for (const item of newCart) {
+      addToCart(item);
+    }
   };
 
   // Increment quantity

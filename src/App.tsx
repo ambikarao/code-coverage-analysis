@@ -31,7 +31,7 @@ function App() {
                 <Route path="/cart-summary" element={<CartSummary />} />
                 <Route path="/categories" element={<CategoryScreen />} />
                 <Route path="/profile" element={<ProfileScreen />} />
-                < Route path="/faq" element={<FAQ />} />
+                <Route path="/faq" element={<FAQ />} />
                 <Route path="*" element={<NotFound />} />
               </Routes>
             </div>

@@ -44,20 +44,23 @@ const FAQ: React.FC = () => {
             borderRadius: '4px'
           }}
         >
-          <div
+          <button
             onClick={() => toggleAccordion(index)}
             style={{
               padding: '1rem',
               backgroundColor: '#f8f9fa',
+              border: 'none',
               cursor: 'pointer',
               display: 'flex',
               justifyContent: 'space-between',
-              alignItems: 'center'
+              alignItems: 'center',
+              width: '100%'
+
             }}
           >
             <h3 style={{ margin: 0 }}>{item.question}</h3>
             <span>{openIndex === index ? '−' : '+'}</span>
-          </div>
+          </button>
           {openIndex === index && (
             <div style={{ padding: '1rem', backgroundColor: '#fff' }}>
               <p style={{ margin: 0 }}>{item.answer}</p>

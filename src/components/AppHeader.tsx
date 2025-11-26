@@ -29,7 +29,7 @@ const AppHeader: React.FC = () => {
       </nav>
       <Link to="/cart" style={{ textDecoration: 'none' }}>
         <div style={{ display: 'flex', alignItems: 'center', gap: '0.5rem', background: '#fff', borderRadius: '20px', padding: '0.5rem 1rem', boxShadow: '0 1px 4px rgba(0,0,0,0.07)', cursor: 'pointer' }}>
-          <span role="img" aria-label="cart" style={{ fontSize: '1.3rem' }}>🛒</span>
+          <span aria-label="cart" style={{ fontSize: '1.3rem' }}>🛒</span>
           <span style={{ fontWeight: 600, color: '#007bff', fontSize: '1rem' }}>Cart: {cart.length}</span>
         </div>
       </Link>

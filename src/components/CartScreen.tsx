@@ -1,30 +1,49 @@
 import React from 'react';
 import { useCart } from '../CartContext';
 
-const CartScreen: React.FC = () => {
+// Constants
+const INITIAL_TOTAL = 0;
+const CART_TITLE = 'Your Cart';
+const EMPTY_CART_MESSAGE = 'Your cart is empty.';
+const PRICE_LABEL = 'Price: $';
+const CATEGORY_LABEL = 'Category: ';
+const STATUS_LABEL = 'Status: ';
+const IN_STOCK_TEXT = 'In Stock';
+const OUT_OF_STOCK_TEXT = 'Out of Stock';
+const TOTAL_LABEL = 'Total: $';
+
+const CartScreen = () => {
   const { cart } = useCart();
 
-  const total = cart.reduce((sum, product) => sum + product.price, 0);
+  // Null safety for cart
+  if (!cart) {
+    return <div>Error: Cart not available</div>;
+  }
+
+  const total = cart.reduce((sum, product) => sum + (product?.price || 0), INITIAL_TOTAL);
+
   return (
-    <div>
-      <h2>Your Cart</h2>
+    <div className="cart-container">
+      <h2>{CART_TITLE}</h2>
+
       {cart.length === 0 ? (
-        <p>Your cart is empty.</p>
+        <p>{EMPTY_CART_MESSAGE}</p>
       ) : (
         <>
-          <ul style={{ listStyle: 'none', padding: 0 }}>
-            {cart.map((product, idx) => (
-              <li key={idx} style={{ marginBottom: '1.5rem', padding: '1rem', border: '1px solid #eee', borderRadius: '10px', background: '#f9f9f9' }}>
+          <ul className="cart-list">
+            {cart.map((product) => (
+              <li key={product.id} className="cart-item">
                 <h3>{product.name}</h3>
                 <p>{product.description}</p>
-                <p>Price: ${product.price}</p>
-                <p>Category: {product.category}</p>
-                <p>Status: {product.inStock ? 'In Stock' : 'Out of Stock'}</p>
+                <p>{PRICE_LABEL}{product.price}</p>
+                <p>{CATEGORY_LABEL}{product.category}</p>
+                <p>{STATUS_LABEL}{product.inStock ? IN_STOCK_TEXT : OUT_OF_STOCK_TEXT}</p>
               </li>
             ))}
           </ul>
-          <div style={{ marginTop: '2rem', fontWeight: 700, fontSize: '1.2rem', textAlign: 'right' }}>
-            Total: ${total.toFixed(2)}
+
+          <div className="cart-total">
+            {TOTAL_LABEL}{total.toFixed(2)}
           </div>
         </>
       )}
