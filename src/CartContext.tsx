@@ -1,4 +1,4 @@
-import React, { createContext, useContext, useState } from 'react';
+import React, { createContext, useContext, useState, useMemo } from 'react';
 
 export interface Product {
   id: number;
@@ -38,8 +38,10 @@ export const CartProvider = ({ children }: CartProviderProps) => {
     setCart([]);
   };
 
+  const value = useMemo(() => ({ cart, addToCart, clearCart }), [cart]);
+
   return (
-    <CartContext.Provider value={{ cart, addToCart, clearCart }}>
+    <CartContext.Provider value={value}>
       {children}
     </CartContext.Provider>
   );

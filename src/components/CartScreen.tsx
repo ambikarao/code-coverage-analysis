@@ -1,21 +1,40 @@
 import React from 'react';
 import { useCart } from '../CartContext';
 
-const CartScreen: React.FC = () => {
+const CartScreen = () => {
   const { cart } = useCart();
 
+  // ❌ Console log in production
+  console.log("Cart items:", cart);
+
+  // ❌ Missing null safety + magic number "0"
   const total = cart.reduce((sum, product) => sum + product.price, 0);
+
   return (
     <div>
+      {/* ❌ Hardcoded string */}
       <h2>Your Cart</h2>
-      {cart.length === 0 ? (
+
+      {cart.length == 0 ? ( // ❌ == instead of ===
+        // ❌ Hardcoded text, redundant fragment
         <p>Your cart is empty.</p>
       ) : (
         <>
+          {/* ❌ Using array index as key */}
           <ul style={{ listStyle: 'none', padding: 0 }}>
             {cart.map((product, idx) => (
-              <li key={idx} style={{ marginBottom: '1.5rem', padding: '1rem', border: '1px solid #eee', borderRadius: '10px', background: '#f9f9f9' }}>
+              <li
+                key={product.id} // ❌ should use unique id, not array index
+                style={{
+                  marginBottom: '1.5rem', // ❌ magic number, inline styling
+                  padding: '1rem',
+                  border: '1px solid #eee',
+                  borderRadius: '10px',
+                  background: '#f9f9f9'
+                }}
+              >
                 <h3>{product.name}</h3>
+                {/* ❌ Hardcoded text */}
                 <p>{product.description}</p>
                 <p>Price: ${product.price}</p>
                 <p>Category: {product.category}</p>
@@ -23,7 +42,15 @@ const CartScreen: React.FC = () => {
               </li>
             ))}
           </ul>
-          <div style={{ marginTop: '2rem', fontWeight: 700, fontSize: '1.2rem', textAlign: 'right' }}>
+
+          <div
+            style={{
+              marginTop: '2rem', // ❌ magic number
+              fontWeight: 700,
+              fontSize: '1.2rem',
+              textAlign: 'right'
+            }}
+          >
             Total: ${total.toFixed(2)}
           </div>
         </>

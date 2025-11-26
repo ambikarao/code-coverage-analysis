@@ -37,19 +37,25 @@ const FAQ: React.FC = () => {
       </h1>
       {faqItems.map((item, index) => (
         <div
-          key={index}
+          key={`faq-${index}`}
           style={{
             marginBottom: '1rem',
             border: '1px solid #ddd',
             borderRadius: '4px'
           }}
         >
-          <div
+          <button
             onClick={() => toggleAccordion(index)}
+            type="button"
             style={{
+              width: '100%',
               padding: '1rem',
               backgroundColor: '#f8f9fa',
               cursor: 'pointer',
+              border: 'none',
+              textAlign: 'left',
+              fontSize: 'inherit',
+              fontFamily: 'inherit',
               display: 'flex',
               justifyContent: 'space-between',
               alignItems: 'center'
@@ -57,7 +63,7 @@ const FAQ: React.FC = () => {
           >
             <h3 style={{ margin: 0 }}>{item.question}</h3>
             <span>{openIndex === index ? '−' : '+'}</span>
-          </div>
+          </button>
           {openIndex === index && (
             <div style={{ padding: '1rem', backgroundColor: '#fff' }}>
               <p style={{ margin: 0 }}>{item.answer}</p>

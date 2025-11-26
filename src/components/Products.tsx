@@ -1,6 +1,5 @@
 import React, { useState } from 'react';
-import { useNavigate } from 'react-router-dom';
-import { Link } from 'react-router-dom';
+import { useNavigate, Link } from 'react-router-dom';
 import productsData from './productsData';
 import { useCart } from '../CartContext';
 
@@ -68,7 +67,7 @@ const Products: React.FC = () => {
 
       <div className="products-grid">
         {filteredProducts.map((product) => (
-          <div key={product.id} className={`product-card ${!product.inStock ? 'out-of-stock' : ''}`}>
+          <div key={product.id} className={`product-card ${product.inStock ? '' : 'out-of-stock'}`}>
             <h3>
               <Link to={`/products/${product.id}`}>{product.name}</Link>
             </h3>
