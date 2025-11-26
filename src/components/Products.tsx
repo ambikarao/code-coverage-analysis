@@ -75,7 +75,7 @@ const Products: React.FC = () => {
             <p>Price: ${product.price}</p>
             <p>Category: {product.category}</p>
             <p>Status: {product.inStock ? 'In Stock' : 'Out of Stock'}</p>
-            <button style={{ marginLeft: '1rem' }} onClick={() => addToCart(product)}>
+            <button className="add-to-cart-btn" onClick={() => addToCart(product)}>
               Add to Cart
             </button>
           </div>
