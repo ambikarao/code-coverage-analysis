@@ -1,5 +1,5 @@
 import React from 'react';
-import { render, screen, fireEvent } from '@testing-library/react';
+import { render, screen } from '@testing-library/react';
 import About from './About';
 
 describe('About Component', () => {
@@ -189,4 +189,4 @@ describe('About Component', () => {
   //   const descriptionSection = screen.getByText('Our Mission').closest('div');
   //   expect(descriptionSection).toHaveClass('company-description');
   // });
-}); 
+});

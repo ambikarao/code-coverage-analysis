@@ -1,4 +1,4 @@
-import React, { createContext, useContext, useState } from 'react';
+import React, { createContext, useContext, useState, useCallback } from 'react';
 
 export interface Product {
   id: number;
@@ -30,13 +30,13 @@ type CartProviderProps = {
 export const CartProvider = ({ children }: CartProviderProps) => {
   const [cart, setCart] = useState<Product[]>([]);
 
-  const addToCart = (product: Product) => {
+  const addToCart = useCallback((product: Product) => {
     setCart((prevCart) => [...prevCart, product]);
-  };
+  }, []);
 
-  const clearCart = () => {
+  const clearCart = useCallback(() => {
     setCart([]);
-  };
+  }, []);
 
   return (
     <CartContext.Provider value={{ cart, addToCart, clearCart }}>

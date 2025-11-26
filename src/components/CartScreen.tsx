@@ -14,7 +14,7 @@ const CartScreen: React.FC = () => {
         <>
           <ul style={{ listStyle: 'none', padding: 0 }}>
             {cart.map((product, idx) => (
-              <li key={idx} style={{ marginBottom: '1.5rem', padding: '1rem', border: '1px solid #eee', borderRadius: '10px', background: '#f9f9f9' }}>
+              <li key={`cart-${idx}-${product.name}`} style={{ marginBottom: '1.5rem', padding: '1rem', border: '1px solid #eee', borderRadius: '10px', background: '#f9f9f9' }}>
                 <h3>{product.name}</h3>
                 <p>{product.description}</p>
                 <p>Price: ${product.price}</p>
