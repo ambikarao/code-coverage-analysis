@@ -2,6 +2,7 @@
 <html lang="en">
   <head>
     <meta charset="utf-8" />
+    <meta http-equiv="Content-Security-Policy" content="default-src 'self'; script-src 'self' 'unsafe-eval' 'unsafe-inline'; style-src 'self' 'unsafe-inline'; img-src 'self' data: https:; font-src 'self' data:; connect-src 'self' https:;" />
     <link rel="icon" href="%PUBLIC_URL%/favicon.ico" />
     <meta name="viewport" content="width=device-width, initial-scale=1" />
     <meta name="theme-color" content="#000000" />
@@ -25,6 +26,14 @@
       Learn how to configure a non-root public URL by running `npm run build`.
     -->
     <title>React App</title>
+    <!--
+      Security Headers Note: For production deployment, ensure the hosting server sets these security headers:
+      - Content-Security-Policy (as above)
+      - X-Frame-Options: DENY
+      - X-Content-Type-Options: nosniff
+      - X-XSS-Protection: 1; mode=block
+      - Referrer-Policy: no-referrer-when-downgrade
+    -->
   </head>
   <body>
     <noscript>You need to enable JavaScript to run this app.</noscript>
