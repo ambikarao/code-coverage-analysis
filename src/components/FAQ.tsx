@@ -37,7 +37,7 @@ const FAQ: React.FC = () => {
       </h1>
       {faqItems.map((item, index) => (
         <div
-          key={index}
+          key={item.question}
           style={{
             marginBottom: '1rem',
             border: '1px solid #ddd',
@@ -46,6 +46,14 @@ const FAQ: React.FC = () => {
         >
           <div
             onClick={() => toggleAccordion(index)}
+            onKeyDown={(e) => {
+              if (e.key === 'Enter' || e.key === ' ') {
+                e.preventDefault();
+                toggleAccordion(index);
+              }
+            }}
+            tabIndex={0}
+            role="button"
             style={{
               padding: '1rem',
               backgroundColor: '#f8f9fa',
