@@ -1,5 +1,5 @@
 import React from 'react';
-import { render, screen, fireEvent } from '@testing-library/react';
+import { render, screen } from '@testing-library/react';
 import About from './About';
 
 describe('About Component', () => {
@@ -23,46 +23,6 @@ describe('About Component', () => {
     expect(screen.getByText('Company Statistics')).toBeInTheDocument();
   });
 
-  // test('renders all company statistics', () => {
-  //   render(<About />);
-    
-  //   // Check statistics values
-  //   expect(screen.getByText('10+')).toBeInTheDocument();
-  //   expect(screen.getByText('50+')).toBeInTheDocument();
-  //   expect(screen.getByText('200+')).toBeInTheDocument();
-  //   expect(screen.getByText('98%')).toBeInTheDocument();
-    
-  //   // Check statistics labels
-  //   expect(screen.getByText('Years in Business')).toBeInTheDocument();
-  //   expect(screen.getByText('Team Members')).toBeInTheDocument();
-  //   expect(screen.getByText('Projects Completed')).toBeInTheDocument();
-  //   expect(screen.getByText('Client Satisfaction')).toBeInTheDocument();
-    
-  //   // Check statistics descriptions
-  //   expect(screen.getByText('Over a decade of experience')).toBeInTheDocument();
-  //   expect(screen.getByText('Dedicated professionals')).toBeInTheDocument();
-  //   expect(screen.getByText('Successful deliveries')).toBeInTheDocument();
-  //   expect(screen.getByText('Happy customers')).toBeInTheDocument();
-  // });
-
-  // test('renders team section with title', () => {
-  //   render(<About />);
-    
-  //   expect(screen.getByText('Our Team')).toBeInTheDocument();
-  // });
-
-  // test('renders all team members with correct data', () => {
-  //   render(<About />);
-    
-  //   // Check if all team members are rendered
-  //   expect(screen.getByText('Sarah Wilson')).toBeInTheDocument();
-  //   expect(screen.getByText('Mike Chen')).toBeInTheDocument();
-  //   expect(screen.getByText('Emily Davis')).toBeInTheDocument();
-  //   expect(screen.getByText('David Rodriguez')).toBeInTheDocument();
-  //   expect(screen.getByText('Lisa Thompson')).toBeInTheDocument();
-  //   expect(screen.getByText('James Miller')).toBeInTheDocument();
-  // });
-
   test('team member cards display correct information', () => {
     render(<About />);
     
@@ -78,27 +38,6 @@ describe('About Component', () => {
     expect(mikeCard).toHaveTextContent('Technology');
     expect(mikeCard).toHaveTextContent('Experience: 12 years (Senior)');
   });
-
-  // test('renders correct number of team members', () => {
-  //   render(<About />);
-    
-  //   const teamCards = screen.getAllByText(/Experience:/);
-  //   expect(teamCards).toHaveLength(6);
-  // });
-
-  // test('experience level calculation works correctly', () => {
-  //   render(<About />);
-    
-  //   // Senior level (10+ years)
-  //   expect(screen.getByText('Experience: 15 years (Senior)')).toBeInTheDocument();
-  //   expect(screen.getByText('Experience: 12 years (Senior)')).toBeInTheDocument();
-  //   expect(screen.getByText('Experience: 10 years (Senior)')).toBeInTheDocument();
-    
-  //   // Mid-level (5-9 years)
-  //   expect(screen.getByText('Experience: 8 years (Mid-level)')).toBeInTheDocument();
-  //   expect(screen.getByText('Experience: 7 years (Mid-level)')).toBeInTheDocument();
-  //   expect(screen.getByText('Experience: 9 years (Mid-level)')).toBeInTheDocument();
-  // });
 
   test('renders company mission section', () => {
     render(<About />);
@@ -189,4 +128,4 @@ describe('About Component', () => {
   //   const descriptionSection = screen.getByText('Our Mission').closest('div');
   //   expect(descriptionSection).toHaveClass('company-description');
   // });
-}); 
+});

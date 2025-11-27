@@ -49,7 +49,7 @@
 }
 
 .home-container p {
-  color: #7f8c8d;
+  color: #2c3e50;
   font-size: 1.2em;
   margin-bottom: 30px;
 }
@@ -239,7 +239,7 @@
 
 .stat-description {
   font-size: 0.9em;
-  opacity: 0.9;
+  opacity: 1;
 }
 
 .team-section {
@@ -304,7 +304,7 @@
 }
 
 .company-description p {
-  color: #7f8c8d;
+  color: #2c3e50;
   line-height: 1.6;
   font-size: 1.1em;
 }

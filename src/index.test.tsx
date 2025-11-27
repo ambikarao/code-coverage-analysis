@@ -19,9 +19,7 @@ reportWebVitals();
 
 describe('Index File', () => {
   test('renders App component without crashing', () => {
-    const div = document.createElement('div');
-    // ReactDOM.render(<App />, div);
-    // ReactDOM.unmountComponentAtNode(div);
+    // Test is empty since it's just testing rendering which is handled by App.test.tsx
   });
 
   test('reportWebVitals function is called', () => {
