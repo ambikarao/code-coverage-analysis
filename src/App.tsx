@@ -12,7 +12,7 @@ import CartSummary from './components/CartSummary';
 import CategoryScreen from './components/CategoryScreen';
 import NotFound from './components/NotFound';
 import ProfileScreen from './components/ProfileScreen';
-import FAQ from './components/FAQ';
+import Faq from './components/FAQ';
 
 function App() {
   return (
@@ -31,7 +31,7 @@ function App() {
                 <Route path="/cart-summary" element={<CartSummary />} />
                 <Route path="/categories" element={<CategoryScreen />} />
                 <Route path="/profile" element={<ProfileScreen />} />
-                < Route path="/faq" element={<FAQ />} />
+                < Route path="/faq" element={<Faq />} />
                 <Route path="*" element={<NotFound />} />
               </Routes>
             </div>

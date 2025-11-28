@@ -1,0 +1,1990 @@
+{
+    "total": 42,
+    "p": 1,
+    "ps": 500,
+    "paging": {
+        "pageIndex": 1,
+        "pageSize": 500,
+        "total": 42
+    },
+    "effortTotal": 179,
+    "issues": [
+        {
+            "key": "303c7a7d-e1bc-4948-8533-df7e2b3c645e",
+            "rule": "typescript:S1854",
+            "severity": "MAJOR",
+            "component": "myproject:src/components/CartScreen.tsx",
+            "project": "myproject",
+            "line": 8,
+            "hash": "3d31dd20dba38c8280db8fa5e03a37c3",
+            "textRange": {
+                "startLine": 8,
+                "endLine": 8,
+                "startOffset": 8,
+                "endOffset": 13
+            },
+            "flows": [],
+            "status": "OPEN",
+            "message": "Remove this useless assignment to variable \"debug\".",
+            "effort": "1min",
+            "debt": "1min",
+            "author": "arafath.shaik@ibm.com",
+            "tags": [
+                "cwe",
+                "unused"
+            ],
+            "creationDate": "2025-11-26T14:58:38+0530",
+            "updateDate": "2025-11-28T09:13:48+0530",
+            "type": "CODE_SMELL",
+            "scope": "MAIN",
+            "quickFixAvailable": false,
+            "messageFormattings": [],
+            "codeVariants": [],
+            "cleanCodeAttribute": "LOGICAL",
+            "cleanCodeAttributeCategory": "INTENTIONAL",
+            "impacts": [
+                {
+                    "softwareQuality": "MAINTAINABILITY",
+                    "severity": "MEDIUM"
+                }
+            ],
+            "issueStatus": "OPEN",
+            "prioritizedRule": false,
+            "fromSonarQubeUpdate": false,
+            "internalTags": []
+        },
+        {
+            "key": "6c752bd0-5cbe-49bc-bce8-0952084545a6",
+            "rule": "typescript:S6479",
+            "severity": "MAJOR",
+            "component": "myproject:src/components/CartScreen.tsx",
+            "project": "myproject",
+            "line": 30,
+            "hash": "e4fcf25d7e4d45db038a6891552c1ba2",
+            "textRange": {
+                "startLine": 30,
+                "endLine": 30,
+                "startOffset": 21,
+                "endOffset": 24
+            },
+            "flows": [],
+            "status": "OPEN",
+            "message": "Do not use Array index in keys",
+            "effort": "5min",
+            "debt": "5min",
+            "author": "arafath.shaik@ibm.com",
+            "tags": [
+                "performance",
+                "react",
+                "jsx"
+            ],
+            "creationDate": "2025-11-26T14:58:38+0530",
+            "updateDate": "2025-11-28T09:13:48+0530",
+            "type": "CODE_SMELL",
+            "scope": "MAIN",
+            "quickFixAvailable": false,
+            "messageFormattings": [],
+            "codeVariants": [],
+            "cleanCodeAttribute": "LOGICAL",
+            "cleanCodeAttributeCategory": "INTENTIONAL",
+            "impacts": [
+                {
+                    "softwareQuality": "MAINTAINABILITY",
+                    "severity": "MEDIUM"
+                }
+            ],
+            "issueStatus": "OPEN",
+            "prioritizedRule": false,
+            "fromSonarQubeUpdate": false,
+            "internalTags": []
+        },
+        {
+            "key": "777f4442-48e0-4bf1-a0fc-ee360ba0cbcc",
+            "rule": "typescript:S6770",
+            "severity": "MINOR",
+            "component": "myproject:src/App.tsx",
+            "project": "myproject",
+            "line": 34,
+            "hash": "c3c8ad1e57ff4976864e441921fca3b1",
+            "textRange": {
+                "startLine": 34,
+                "endLine": 34,
+                "startOffset": 45,
+                "endOffset": 52
+            },
+            "flows": [],
+            "status": "OPEN",
+            "message": "Imported JSX component FAQ must be in PascalCase",
+            "effort": "5min",
+            "debt": "5min",
+            "author": "arafath.shaik@ibm.com",
+            "tags": [
+                "react"
+            ],
+            "creationDate": "2025-09-24T00:03:08+0530",
+            "updateDate": "2025-11-28T09:13:48+0530",
+            "type": "CODE_SMELL",
+            "scope": "MAIN",
+            "quickFixAvailable": false,
+            "messageFormattings": [],
+            "codeVariants": [],
+            "cleanCodeAttribute": "IDENTIFIABLE",
+            "cleanCodeAttributeCategory": "CONSISTENT",
+            "impacts": [
+                {
+                    "softwareQuality": "MAINTAINABILITY",
+                    "severity": "LOW"
+                }
+            ],
+            "issueStatus": "OPEN",
+            "prioritizedRule": false,
+            "fromSonarQubeUpdate": false,
+            "internalTags": []
+        },
+        {
+            "key": "3f86c621-c873-4422-b881-b7090c7e5b08",
+            "rule": "typescript:S6479",
+            "severity": "MAJOR",
+            "component": "myproject:src/components/FAQ.tsx",
+            "project": "myproject",
+            "line": 40,
+            "hash": "0dfd4962214954d675377d11fe111fba",
+            "textRange": {
+                "startLine": 40,
+                "endLine": 40,
+                "startOffset": 15,
+                "endOffset": 20
+            },
+            "flows": [],
+            "status": "OPEN",
+            "message": "Do not use Array index in keys",
+            "effort": "5min",
+            "debt": "5min",
+            "author": "arafath.shaik@ibm.com",
+            "tags": [
+                "performance",
+                "react",
+                "jsx"
+            ],
+            "creationDate": "2025-09-24T00:03:08+0530",
+            "updateDate": "2025-11-28T09:13:48+0530",
+            "type": "CODE_SMELL",
+            "scope": "MAIN",
+            "quickFixAvailable": false,
+            "messageFormattings": [],
+            "codeVariants": [],
+            "cleanCodeAttribute": "LOGICAL",
+            "cleanCodeAttributeCategory": "INTENTIONAL",
+            "impacts": [
+                {
+                    "softwareQuality": "MAINTAINABILITY",
+                    "severity": "MEDIUM"
+                }
+            ],
+            "issueStatus": "OPEN",
+            "prioritizedRule": false,
+            "fromSonarQubeUpdate": false,
+            "internalTags": []
+        },
+        {
+            "key": "fc1508fe-4dc0-451a-b4aa-5e2abce53917",
+            "rule": "typescript:S1082",
+            "severity": "MINOR",
+            "component": "myproject:src/components/FAQ.tsx",
+            "project": "myproject",
+            "line": 47,
+            "hash": "d90c26198ff23a5c54f81269ceed5c01",
+            "textRange": {
+                "startLine": 47,
+                "endLine": 57,
+                "startOffset": 10,
+                "endOffset": 11
+            },
+            "flows": [],
+            "status": "OPEN",
+            "message": "Visible, non-interactive elements with click handlers must have at least one keyboard listener.",
+            "effort": "5min",
+            "debt": "5min",
+            "author": "arafath.shaik@ibm.com",
+            "tags": [
+                "accessibility",
+                "react"
+            ],
+            "creationDate": "2025-09-24T00:03:08+0530",
+            "updateDate": "2025-11-28T09:13:48+0530",
+            "type": "BUG",
+            "scope": "MAIN",
+            "quickFixAvailable": false,
+            "messageFormattings": [],
+            "codeVariants": [],
+            "cleanCodeAttribute": "COMPLETE",
+            "cleanCodeAttributeCategory": "INTENTIONAL",
+            "impacts": [
+                {
+                    "softwareQuality": "RELIABILITY",
+                    "severity": "LOW"
+                }
+            ],
+            "issueStatus": "OPEN",
+            "prioritizedRule": false,
+            "fromSonarQubeUpdate": false,
+            "internalTags": []
+        },
+        {
+            "key": "ff9b6635-8ac1-47a4-868b-4be3b5e7185a",
+            "rule": "typescript:S6848",
+            "severity": "MAJOR",
+            "component": "myproject:src/components/FAQ.tsx",
+            "project": "myproject",
+            "line": 47,
+            "hash": "d90c26198ff23a5c54f81269ceed5c01",
+            "textRange": {
+                "startLine": 47,
+                "endLine": 57,
+                "startOffset": 10,
+                "endOffset": 11
+            },
+            "flows": [],
+            "status": "OPEN",
+            "message": "Avoid non-native interactive elements. If using native HTML is not possible, add an appropriate role and support for tabbing, mouse, keyboard, and touch inputs to an interactive content element.",
+            "effort": "5min",
+            "debt": "5min",
+            "author": "arafath.shaik@ibm.com",
+            "tags": [
+                "accessibility",
+                "react"
+            ],
+            "creationDate": "2025-09-24T00:03:08+0530",
+            "updateDate": "2025-11-28T09:13:48+0530",
+            "type": "CODE_SMELL",
+            "scope": "MAIN",
+            "quickFixAvailable": false,
+            "messageFormattings": [],
+            "codeVariants": [],
+            "cleanCodeAttribute": "CONVENTIONAL",
+            "cleanCodeAttributeCategory": "CONSISTENT",
+            "impacts": [
+                {
+                    "softwareQuality": "MAINTAINABILITY",
+                    "severity": "LOW"
+                },
+                {
+                    "softwareQuality": "RELIABILITY",
+                    "severity": "MEDIUM"
+                }
+            ],
+            "issueStatus": "OPEN",
+            "prioritizedRule": false,
+            "fromSonarQubeUpdate": false,
+            "internalTags": []
+        },
+        {
+            "key": "976a7d6d-2c1a-40c2-837e-494091131e67",
+            "rule": "typescript:S125",
+            "severity": "MAJOR",
+            "component": "myproject:src/index.test.tsx",
+            "project": "myproject",
+            "line": 23,
+            "hash": "8f7b742492496cebe0f3e17cc49b2e78",
+            "textRange": {
+                "startLine": 23,
+                "endLine": 24,
+                "startOffset": 4,
+                "endOffset": 44
+            },
+            "flows": [],
+            "status": "OPEN",
+            "message": "Remove this commented out code.",
+            "effort": "5min",
+            "debt": "5min",
+            "author": "arafath.shaik@ibm.com",
+            "tags": [
+                "unused"
+            ],
+            "creationDate": "2025-09-24T00:03:08+0530",
+            "updateDate": "2025-11-28T09:13:48+0530",
+            "type": "CODE_SMELL",
+            "scope": "MAIN",
+            "quickFixAvailable": true,
+            "messageFormattings": [],
+            "codeVariants": [],
+            "cleanCodeAttribute": "CLEAR",
+            "cleanCodeAttributeCategory": "INTENTIONAL",
+            "impacts": [
+                {
+                    "softwareQuality": "MAINTAINABILITY",
+                    "severity": "MEDIUM"
+                }
+            ],
+            "issueStatus": "OPEN",
+            "prioritizedRule": false,
+            "fromSonarQubeUpdate": false,
+            "internalTags": []
+        },
+        {
+            "key": "8f4991b5-225c-43dd-ace9-315da36bb4c1",
+            "rule": "typescript:S1854",
+            "severity": "MAJOR",
+            "component": "myproject:src/index.test.tsx",
+            "project": "myproject",
+            "line": 22,
+            "hash": "d6dc4602d0b38290fd8e817980c5d172",
+            "textRange": {
+                "startLine": 22,
+                "endLine": 22,
+                "startOffset": 10,
+                "endOffset": 13
+            },
+            "flows": [],
+            "status": "OPEN",
+            "message": "Remove this useless assignment to variable \"div\".",
+            "effort": "1min",
+            "debt": "1min",
+            "author": "63193852+ambikarao@users.noreply.github.com",
+            "tags": [
+                "cwe",
+                "unused"
+            ],
+            "creationDate": "2025-08-21T16:38:39+0530",
+            "updateDate": "2025-11-28T09:13:48+0530",
+            "type": "CODE_SMELL",
+            "scope": "MAIN",
+            "quickFixAvailable": false,
+            "messageFormattings": [],
+            "codeVariants": [],
+            "cleanCodeAttribute": "LOGICAL",
+            "cleanCodeAttributeCategory": "INTENTIONAL",
+            "impacts": [
+                {
+                    "softwareQuality": "MAINTAINABILITY",
+                    "severity": "MEDIUM"
+                }
+            ],
+            "issueStatus": "OPEN",
+            "prioritizedRule": false,
+            "fromSonarQubeUpdate": false,
+            "internalTags": []
+        },
+        {
+            "key": "6b98de3f-fa42-4ee9-85a9-451a8b4fff90",
+            "rule": "typescript:S6481",
+            "severity": "MAJOR",
+            "component": "myproject:src/CartContext.tsx",
+            "project": "myproject",
+            "line": 42,
+            "hash": "16e3c1fa01d9b177c277950b360d27d8",
+            "textRange": {
+                "startLine": 42,
+                "endLine": 42,
+                "startOffset": 33,
+                "endOffset": 63
+            },
+            "flows": [],
+            "status": "OPEN",
+            "message": "The object passed as the value prop to the Context provider changes every render. To fix this consider wrapping it in a useMemo hook.",
+            "effort": "5min",
+            "debt": "5min",
+            "author": "sowns121@in.ibm.com",
+            "tags": [
+                "performance",
+                "react",
+                "jsx"
+            ],
+            "creationDate": "2025-08-19T15:28:04+0530",
+            "updateDate": "2025-11-28T09:13:48+0530",
+            "type": "CODE_SMELL",
+            "scope": "MAIN",
+            "quickFixAvailable": false,
+            "messageFormattings": [],
+            "codeVariants": [],
+            "cleanCodeAttribute": "EFFICIENT",
+            "cleanCodeAttributeCategory": "INTENTIONAL",
+            "impacts": [
+                {
+                    "softwareQuality": "MAINTAINABILITY",
+                    "severity": "MEDIUM"
+                }
+            ],
+            "issueStatus": "OPEN",
+            "prioritizedRule": false,
+            "fromSonarQubeUpdate": false,
+            "internalTags": []
+        },
+        {
+            "key": "8596c1ad-0d4b-4032-bb6d-2605d86f368b",
+            "rule": "typescript:S7728",
+            "severity": "MINOR",
+            "component": "myproject:src/components/CartSummary.tsx",
+            "project": "myproject",
+            "line": 22,
+            "hash": "c3a51126b79c60f7440ede3ce5dd75d4",
+            "textRange": {
+                "startLine": 22,
+                "endLine": 22,
+                "startOffset": 12,
+                "endOffset": 19
+            },
+            "flows": [],
+            "status": "OPEN",
+            "message": "Use `for…of` instead of `.forEach(…)`.",
+            "effort": "5min",
+            "debt": "5min",
+            "author": "sowns121@in.ibm.com",
+            "tags": [
+                "readability",
+                "performance"
+            ],
+            "creationDate": "2025-08-19T15:28:04+0530",
+            "updateDate": "2025-11-28T09:13:48+0530",
+            "type": "CODE_SMELL",
+            "scope": "MAIN",
+            "quickFixAvailable": false,
+            "messageFormattings": [],
+            "codeVariants": [],
+            "cleanCodeAttribute": "EFFICIENT",
+            "cleanCodeAttributeCategory": "INTENTIONAL",
+            "impacts": [
+                {
+                    "softwareQuality": "MAINTAINABILITY",
+                    "severity": "LOW"
+                }
+            ],
+            "issueStatus": "OPEN",
+            "prioritizedRule": false,
+            "fromSonarQubeUpdate": false,
+            "internalTags": []
+        },
+        {
+            "key": "b8826adc-7057-48ad-8210-24dcf0f7f496",
+            "rule": "typescript:S7728",
+            "severity": "MINOR",
+            "component": "myproject:src/components/CartSummary.tsx",
+            "project": "myproject",
+            "line": 36,
+            "hash": "c3a51126b79c60f7440ede3ce5dd75d4",
+            "textRange": {
+                "startLine": 36,
+                "endLine": 36,
+                "startOffset": 12,
+                "endOffset": 19
+            },
+            "flows": [],
+            "status": "OPEN",
+            "message": "Use `for…of` instead of `.forEach(…)`.",
+            "effort": "5min",
+            "debt": "5min",
+            "author": "sowns121@in.ibm.com",
+            "tags": [
+                "readability",
+                "performance"
+            ],
+            "creationDate": "2025-08-19T15:28:04+0530",
+            "updateDate": "2025-11-28T09:13:48+0530",
+            "type": "CODE_SMELL",
+            "scope": "MAIN",
+            "quickFixAvailable": false,
+            "messageFormattings": [],
+            "codeVariants": [],
+            "cleanCodeAttribute": "EFFICIENT",
+            "cleanCodeAttributeCategory": "INTENTIONAL",
+            "impacts": [
+                {
+                    "softwareQuality": "MAINTAINABILITY",
+                    "severity": "LOW"
+                }
+            ],
+            "issueStatus": "OPEN",
+            "prioritizedRule": false,
+            "fromSonarQubeUpdate": false,
+            "internalTags": []
+        },
+        {
+            "key": "ed2a5b4d-9b7c-45fe-9d53-bcb44ce41a4a",
+            "rule": "typescript:S6479",
+            "severity": "MAJOR",
+            "component": "myproject:src/components/CategoryScreen.tsx",
+            "project": "myproject",
+            "line": 15,
+            "hash": "f1469daca22e1c1eed8c0285302adb78",
+            "textRange": {
+                "startLine": 15,
+                "endLine": 15,
+                "startOffset": 19,
+                "endOffset": 22
+            },
+            "flows": [],
+            "status": "OPEN",
+            "message": "Do not use Array index in keys",
+            "effort": "5min",
+            "debt": "5min",
+            "author": "sowns121@in.ibm.com",
+            "tags": [
+                "performance",
+                "react",
+                "jsx"
+            ],
+            "creationDate": "2025-08-19T15:28:04+0530",
+            "updateDate": "2025-11-28T09:13:48+0530",
+            "type": "CODE_SMELL",
+            "scope": "MAIN",
+            "quickFixAvailable": false,
+            "messageFormattings": [],
+            "codeVariants": [],
+            "cleanCodeAttribute": "LOGICAL",
+            "cleanCodeAttributeCategory": "INTENTIONAL",
+            "impacts": [
+                {
+                    "softwareQuality": "MAINTAINABILITY",
+                    "severity": "MEDIUM"
+                }
+            ],
+            "issueStatus": "OPEN",
+            "prioritizedRule": false,
+            "fromSonarQubeUpdate": false,
+            "internalTags": []
+        },
+        {
+            "key": "146e6eca-b1d1-45b8-ab1d-a5c805e9b18b",
+            "rule": "typescript:S6479",
+            "severity": "MAJOR",
+            "component": "myproject:src/components/CategoryScreen.tsx",
+            "project": "myproject",
+            "line": 25,
+            "hash": "e2bf4af2e8e03b6ed08afcfdb72c740e",
+            "textRange": {
+                "startLine": 25,
+                "endLine": 25,
+                "startOffset": 23,
+                "endOffset": 26
+            },
+            "flows": [],
+            "status": "OPEN",
+            "message": "Do not use Array index in keys",
+            "effort": "5min",
+            "debt": "5min",
+            "author": "sowns121@in.ibm.com",
+            "tags": [
+                "performance",
+                "react",
+                "jsx"
+            ],
+            "creationDate": "2025-08-19T15:28:04+0530",
+            "updateDate": "2025-11-28T09:13:48+0530",
+            "type": "CODE_SMELL",
+            "scope": "MAIN",
+            "quickFixAvailable": false,
+            "messageFormattings": [],
+            "codeVariants": [],
+            "cleanCodeAttribute": "LOGICAL",
+            "cleanCodeAttributeCategory": "INTENTIONAL",
+            "impacts": [
+                {
+                    "softwareQuality": "MAINTAINABILITY",
+                    "severity": "MEDIUM"
+                }
+            ],
+            "issueStatus": "OPEN",
+            "prioritizedRule": false,
+            "fromSonarQubeUpdate": false,
+            "internalTags": []
+        },
+        {
+            "key": "154aae2b-b6a0-43a2-a17e-8a7b7e70851e",
+            "rule": "typescript:S6479",
+            "severity": "MAJOR",
+            "component": "myproject:src/components/ProfileScreen.tsx",
+            "project": "myproject",
+            "line": 29,
+            "hash": "811f8f7de57b6d06059099c20b43785d",
+            "textRange": {
+                "startLine": 29,
+                "endLine": 29,
+                "startOffset": 21,
+                "endOffset": 24
+            },
+            "flows": [],
+            "status": "OPEN",
+            "message": "Do not use Array index in keys",
+            "effort": "5min",
+            "debt": "5min",
+            "author": "sowns121@in.ibm.com",
+            "tags": [
+                "performance",
+                "react",
+                "jsx"
+            ],
+            "creationDate": "2025-08-19T15:28:04+0530",
+            "updateDate": "2025-11-28T09:13:48+0530",
+            "type": "CODE_SMELL",
+            "scope": "MAIN",
+            "quickFixAvailable": false,
+            "messageFormattings": [],
+            "codeVariants": [],
+            "cleanCodeAttribute": "LOGICAL",
+            "cleanCodeAttributeCategory": "INTENTIONAL",
+            "impacts": [
+                {
+                    "softwareQuality": "MAINTAINABILITY",
+                    "severity": "MEDIUM"
+                }
+            ],
+            "issueStatus": "OPEN",
+            "prioritizedRule": false,
+            "fromSonarQubeUpdate": false,
+            "internalTags": []
+        },
+        {
+            "key": "41d7fada-2162-4d86-a97a-61907764beb2",
+            "rule": "typescript:S6819",
+            "severity": "MAJOR",
+            "component": "myproject:src/components/AppHeader.tsx",
+            "project": "myproject",
+            "line": 32,
+            "hash": "5ed073db3fc77384e478983056c9410b",
+            "textRange": {
+                "startLine": 32,
+                "endLine": 32,
+                "startOffset": 10,
+                "endOffset": 76
+            },
+            "flows": [],
+            "status": "OPEN",
+            "message": "Use \u003cimg alt\u003d...\u003e, or \u003cimg alt\u003d...\u003e instead of the \"img\" role to ensure accessibility across all devices.",
+            "effort": "5min",
+            "debt": "5min",
+            "author": "sowns121@in.ibm.com",
+            "tags": [
+                "accessibility",
+                "react"
+            ],
+            "creationDate": "2025-08-19T10:20:20+0530",
+            "updateDate": "2025-11-28T09:13:48+0530",
+            "type": "CODE_SMELL",
+            "scope": "MAIN",
+            "quickFixAvailable": false,
+            "messageFormattings": [],
+            "codeVariants": [],
+            "cleanCodeAttribute": "CONVENTIONAL",
+            "cleanCodeAttributeCategory": "CONSISTENT",
+            "impacts": [
+                {
+                    "softwareQuality": "MAINTAINABILITY",
+                    "severity": "MEDIUM"
+                }
+            ],
+            "issueStatus": "OPEN",
+            "prioritizedRule": false,
+            "fromSonarQubeUpdate": false,
+            "internalTags": []
+        },
+        {
+            "key": "7e216901-ede3-4393-8a17-f3e62c6a9ff4",
+            "rule": "typescript:S3863",
+            "severity": "MINOR",
+            "component": "myproject:src/components/Products.tsx",
+            "project": "myproject",
+            "line": 3,
+            "hash": "77a5c3b84d745e1de23b4273c81b0b8b",
+            "textRange": {
+                "startLine": 3,
+                "endLine": 3,
+                "startOffset": 21,
+                "endOffset": 39
+            },
+            "flows": [],
+            "status": "OPEN",
+            "message": "\u0027C:\\Users\\ShaikArafath\\Documents\\code-coverage-analysis-1\\node_modules\\react-router-dom\\dist\\index.mjs\u0027 imported multiple times.",
+            "effort": "1min",
+            "debt": "1min",
+            "author": "sowns121@in.ibm.com",
+            "tags": [
+                "es2015"
+            ],
+            "creationDate": "2025-08-19T10:20:20+0530",
+            "updateDate": "2025-11-28T09:13:48+0530",
+            "type": "CODE_SMELL",
+            "scope": "MAIN",
+            "quickFixAvailable": false,
+            "messageFormattings": [],
+            "codeVariants": [],
+            "cleanCodeAttribute": "CONVENTIONAL",
+            "cleanCodeAttributeCategory": "CONSISTENT",
+            "impacts": [
+                {
+                    "softwareQuality": "MAINTAINABILITY",
+                    "severity": "LOW"
+                }
+            ],
+            "issueStatus": "OPEN",
+            "prioritizedRule": false,
+            "fromSonarQubeUpdate": false,
+            "internalTags": []
+        },
+        {
+            "key": "ed776d7a-b19a-494d-9a16-3cef88176617",
+            "rule": "typescript:S4123",
+            "severity": "CRITICAL",
+            "component": "myproject:src/reportWebVitals.test.ts",
+            "project": "myproject",
+            "line": 17,
+            "hash": "6584c8d04d5ef5589eb6fa4c88e535a2",
+            "textRange": {
+                "startLine": 17,
+                "endLine": 17,
+                "startOffset": 4,
+                "endOffset": 33
+            },
+            "flows": [],
+            "status": "OPEN",
+            "message": "Unexpected `await` of a non-Promise (non-\"Thenable\") value.",
+            "effort": "1min",
+            "debt": "1min",
+            "author": "63193852+ambikarao@users.noreply.github.com",
+            "tags": [
+                "type-dependent",
+                "confusing"
+            ],
+            "creationDate": "2025-08-18T08:23:10+0530",
+            "updateDate": "2025-11-28T09:13:48+0530",
+            "type": "CODE_SMELL",
+            "scope": "MAIN",
+            "quickFixAvailable": true,
+            "messageFormattings": [],
+            "codeVariants": [],
+            "cleanCodeAttribute": "CLEAR",
+            "cleanCodeAttributeCategory": "INTENTIONAL",
+            "impacts": [
+                {
+                    "softwareQuality": "MAINTAINABILITY",
+                    "severity": "HIGH"
+                }
+            ],
+            "issueStatus": "OPEN",
+            "prioritizedRule": false,
+            "fromSonarQubeUpdate": false,
+            "internalTags": []
+        },
+        {
+            "key": "e11df905-ec10-44a2-b311-557a6ab9a88e",
+            "rule": "css:S7924",
+            "severity": "MAJOR",
+            "component": "myproject:src/App.css",
+            "project": "myproject",
+            "line": 19,
+            "hash": "6a5e8cb97ac89286458bcafc604aeda5",
+            "textRange": {
+                "startLine": 19,
+                "endLine": 19,
+                "startOffset": 0,
+                "endOffset": 15
+            },
+            "flows": [],
+            "status": "OPEN",
+            "message": "Text does not meet the minimal contrast requirement with its background.",
+            "effort": "5min",
+            "debt": "5min",
+            "author": "ambikarao.pantala@gmail.com",
+            "tags": [
+                "css",
+                "accessibility",
+                "wcag",
+                "contrast"
+            ],
+            "creationDate": "2025-08-05T14:39:24+0530",
+            "updateDate": "2025-11-25T22:29:17+0530",
+            "type": "CODE_SMELL",
+            "scope": "MAIN",
+            "quickFixAvailable": false,
+            "messageFormattings": [],
+            "codeVariants": [],
+            "cleanCodeAttribute": "CONVENTIONAL",
+            "cleanCodeAttributeCategory": "CONSISTENT",
+            "impacts": [
+                {
+                    "softwareQuality": "MAINTAINABILITY",
+                    "severity": "MEDIUM"
+                }
+            ],
+            "issueStatus": "OPEN",
+            "prioritizedRule": false,
+            "fromSonarQubeUpdate": false,
+            "internalTags": []
+        },
+        {
+            "key": "a9becb27-c93e-48ce-8c8c-f58317eaa316",
+            "rule": "css:S7924",
+            "severity": "MAJOR",
+            "component": "myproject:src/App.css",
+            "project": "myproject",
+            "line": 146,
+            "hash": "6a5e8cb97ac89286458bcafc604aeda5",
+            "textRange": {
+                "startLine": 146,
+                "endLine": 146,
+                "startOffset": 0,
+                "endOffset": 15
+            },
+            "flows": [],
+            "status": "OPEN",
+            "message": "Text does not meet the minimal contrast requirement with its background.",
+            "effort": "5min",
+            "debt": "5min",
+            "author": "ambikarao.pantala@gmail.com",
+            "tags": [
+                "css",
+                "accessibility",
+                "wcag",
+                "contrast"
+            ],
+            "creationDate": "2025-08-05T14:39:24+0530",
+            "updateDate": "2025-11-25T13:30:06+0530",
+            "type": "CODE_SMELL",
+            "scope": "MAIN",
+            "quickFixAvailable": false,
+            "messageFormattings": [],
+            "codeVariants": [],
+            "cleanCodeAttribute": "CONVENTIONAL",
+            "cleanCodeAttributeCategory": "CONSISTENT",
+            "impacts": [
+                {
+                    "softwareQuality": "MAINTAINABILITY",
+                    "severity": "MEDIUM"
+                }
+            ],
+            "issueStatus": "OPEN",
+            "prioritizedRule": false,
+            "fromSonarQubeUpdate": false,
+            "internalTags": []
+        },
+        {
+            "key": "5f2027f3-b9b7-424b-9ae2-720460ffc19c",
+            "rule": "css:S7924",
+            "severity": "MAJOR",
+            "component": "myproject:src/App.css",
+            "project": "myproject",
+            "line": 224,
+            "hash": "6a5e8cb97ac89286458bcafc604aeda5",
+            "textRange": {
+                "startLine": 224,
+                "endLine": 224,
+                "startOffset": 0,
+                "endOffset": 15
+            },
+            "flows": [],
+            "status": "OPEN",
+            "message": "Text does not meet the minimal contrast requirement with its background.",
+            "effort": "5min",
+            "debt": "5min",
+            "author": "ambikarao.pantala@gmail.com",
+            "tags": [
+                "css",
+                "accessibility",
+                "wcag",
+                "contrast"
+            ],
+            "creationDate": "2025-08-05T14:39:24+0530",
+            "updateDate": "2025-11-25T18:41:26+0530",
+            "type": "CODE_SMELL",
+            "scope": "MAIN",
+            "quickFixAvailable": false,
+            "messageFormattings": [],
+            "codeVariants": [],
+            "cleanCodeAttribute": "CONVENTIONAL",
+            "cleanCodeAttributeCategory": "CONSISTENT",
+            "impacts": [
+                {
+                    "softwareQuality": "MAINTAINABILITY",
+                    "severity": "MEDIUM"
+                }
+            ],
+            "issueStatus": "OPEN",
+            "prioritizedRule": false,
+            "fromSonarQubeUpdate": false,
+            "internalTags": []
+        },
+        {
+            "key": "ba8e16c8-2e0b-4d83-9399-9cbb70280298",
+            "rule": "typescript:S1128",
+            "severity": "MINOR",
+            "component": "myproject:src/components/About.test.tsx",
+            "project": "myproject",
+            "line": 2,
+            "hash": "c32704a78b8f28ec71fd323abb8d6924",
+            "textRange": {
+                "startLine": 2,
+                "endLine": 2,
+                "startOffset": 25,
+                "endOffset": 34
+            },
+            "flows": [],
+            "status": "OPEN",
+            "message": "Remove this unused import of \u0027fireEvent\u0027.",
+            "effort": "1min",
+            "debt": "1min",
+            "author": "ambikarao.pantala@gmail.com",
+            "tags": [
+                "es2015",
+                "type-dependent",
+                "unused"
+            ],
+            "creationDate": "2025-08-05T14:39:24+0530",
+            "updateDate": "2025-11-28T09:13:48+0530",
+            "type": "CODE_SMELL",
+            "scope": "MAIN",
+            "quickFixAvailable": true,
+            "messageFormattings": [],
+            "codeVariants": [],
+            "cleanCodeAttribute": "CLEAR",
+            "cleanCodeAttributeCategory": "INTENTIONAL",
+            "impacts": [
+                {
+                    "softwareQuality": "MAINTAINABILITY",
+                    "severity": "LOW"
+                }
+            ],
+            "issueStatus": "OPEN",
+            "prioritizedRule": false,
+            "fromSonarQubeUpdate": false,
+            "internalTags": []
+        },
+        {
+            "key": "b6d2ad79-b923-452d-8110-6e46838c8a0c",
+            "rule": "typescript:S125",
+            "severity": "MAJOR",
+            "component": "myproject:src/components/About.test.tsx",
+            "project": "myproject",
+            "line": 29,
+            "hash": "e8f40facfb3c1136a0d80d3837526f47",
+            "textRange": {
+                "startLine": 29,
+                "endLine": 33,
+                "startOffset": 2,
+                "endOffset": 59
+            },
+            "flows": [],
+            "status": "OPEN",
+            "message": "Remove this commented out code.",
+            "effort": "5min",
+            "debt": "5min",
+            "author": "ambikarao.pantala@gmail.com",
+            "tags": [
+                "unused"
+            ],
+            "creationDate": "2025-08-05T14:39:24+0530",
+            "updateDate": "2025-11-28T09:13:48+0530",
+            "type": "CODE_SMELL",
+            "scope": "MAIN",
+            "quickFixAvailable": true,
+            "messageFormattings": [],
+            "codeVariants": [],
+            "cleanCodeAttribute": "CLEAR",
+            "cleanCodeAttributeCategory": "INTENTIONAL",
+            "impacts": [
+                {
+                    "softwareQuality": "MAINTAINABILITY",
+                    "severity": "MEDIUM"
+                }
+            ],
+            "issueStatus": "OPEN",
+            "prioritizedRule": false,
+            "fromSonarQubeUpdate": false,
+            "internalTags": []
+        },
+        {
+            "key": "32a2465c-dd21-4418-a058-7810ed2420eb",
+            "rule": "typescript:S125",
+            "severity": "MAJOR",
+            "component": "myproject:src/components/About.test.tsx",
+            "project": "myproject",
+            "line": 35,
+            "hash": "ed6631d72b64d8ce795ccebaacb10024",
+            "textRange": {
+                "startLine": 35,
+                "endLine": 39,
+                "startOffset": 2,
+                "endOffset": 75
+            },
+            "flows": [],
+            "status": "OPEN",
+            "message": "Remove this commented out code.",
+            "effort": "5min",
+            "debt": "5min",
+            "author": "ambikarao.pantala@gmail.com",
+            "tags": [
+                "unused"
+            ],
+            "creationDate": "2025-08-05T14:39:24+0530",
+            "updateDate": "2025-11-28T09:13:48+0530",
+            "type": "CODE_SMELL",
+            "scope": "MAIN",
+            "quickFixAvailable": true,
+            "messageFormattings": [],
+            "codeVariants": [],
+            "cleanCodeAttribute": "CLEAR",
+            "cleanCodeAttributeCategory": "INTENTIONAL",
+            "impacts": [
+                {
+                    "softwareQuality": "MAINTAINABILITY",
+                    "severity": "MEDIUM"
+                }
+            ],
+            "issueStatus": "OPEN",
+            "prioritizedRule": false,
+            "fromSonarQubeUpdate": false,
+            "internalTags": []
+        },
+        {
+            "key": "eefca5ef-a293-4cdc-9164-123312b6e771",
+            "rule": "typescript:S125",
+            "severity": "MAJOR",
+            "component": "myproject:src/components/About.test.tsx",
+            "project": "myproject",
+            "line": 92,
+            "hash": "5d08e0d0e518760e96c1c47abd7c53ad",
+            "textRange": {
+                "startLine": 92,
+                "endLine": 95,
+                "startOffset": 2,
+                "endOffset": 85
+            },
+            "flows": [],
+            "status": "OPEN",
+            "message": "Remove this commented out code.",
+            "effort": "5min",
+            "debt": "5min",
+            "author": "ambikarao.pantala@gmail.com",
+            "tags": [
+                "unused"
+            ],
+            "creationDate": "2025-08-05T14:39:24+0530",
+            "updateDate": "2025-11-28T09:13:48+0530",
+            "type": "CODE_SMELL",
+            "scope": "MAIN",
+            "quickFixAvailable": true,
+            "messageFormattings": [],
+            "codeVariants": [],
+            "cleanCodeAttribute": "CLEAR",
+            "cleanCodeAttributeCategory": "INTENTIONAL",
+            "impacts": [
+                {
+                    "softwareQuality": "MAINTAINABILITY",
+                    "severity": "MEDIUM"
+                }
+            ],
+            "issueStatus": "OPEN",
+            "prioritizedRule": false,
+            "fromSonarQubeUpdate": false,
+            "internalTags": []
+        },
+        {
+            "key": "a2619c08-dc84-4086-a263-0bba1b789574",
+            "rule": "typescript:S125",
+            "severity": "MAJOR",
+            "component": "myproject:src/components/About.test.tsx",
+            "project": "myproject",
+            "line": 122,
+            "hash": "fa936486422cc86efc2a44481d95ef25",
+            "textRange": {
+                "startLine": 122,
+                "endLine": 123,
+                "startOffset": 2,
+                "endOffset": 41
+            },
+            "flows": [],
+            "status": "OPEN",
+            "message": "Remove this commented out code.",
+            "effort": "5min",
+            "debt": "5min",
+            "author": "ambikarao.pantala@gmail.com",
+            "tags": [
+                "unused"
+            ],
+            "creationDate": "2025-08-05T14:39:24+0530",
+            "updateDate": "2025-11-25T22:37:03+0530",
+            "type": "CODE_SMELL",
+            "scope": "MAIN",
+            "quickFixAvailable": true,
+            "messageFormattings": [],
+            "codeVariants": [],
+            "cleanCodeAttribute": "CLEAR",
+            "cleanCodeAttributeCategory": "INTENTIONAL",
+            "impacts": [
+                {
+                    "softwareQuality": "MAINTAINABILITY",
+                    "severity": "MEDIUM"
+                }
+            ],
+            "issueStatus": "OPEN",
+            "prioritizedRule": false,
+            "fromSonarQubeUpdate": false,
+            "internalTags": []
+        },
+        {
+            "key": "00390682-7981-446f-986b-b4fadf864873",
+            "rule": "typescript:S125",
+            "severity": "MAJOR",
+            "component": "myproject:src/components/About.test.tsx",
+            "project": "myproject",
+            "line": 135,
+            "hash": "7fcc35f52fe21083d3a1ea712a8c4b2c",
+            "textRange": {
+                "startLine": 135,
+                "endLine": 136,
+                "startOffset": 2,
+                "endOffset": 41
+            },
+            "flows": [],
+            "status": "OPEN",
+            "message": "Remove this commented out code.",
+            "effort": "5min",
+            "debt": "5min",
+            "author": "ambikarao.pantala@gmail.com",
+            "tags": [
+                "unused"
+            ],
+            "creationDate": "2025-08-05T14:39:24+0530",
+            "updateDate": "2025-11-25T22:37:03+0530",
+            "type": "CODE_SMELL",
+            "scope": "MAIN",
+            "quickFixAvailable": true,
+            "messageFormattings": [],
+            "codeVariants": [],
+            "cleanCodeAttribute": "CLEAR",
+            "cleanCodeAttributeCategory": "INTENTIONAL",
+            "impacts": [
+                {
+                    "softwareQuality": "MAINTAINABILITY",
+                    "severity": "MEDIUM"
+                }
+            ],
+            "issueStatus": "OPEN",
+            "prioritizedRule": false,
+            "fromSonarQubeUpdate": false,
+            "internalTags": []
+        },
+        {
+            "key": "155e26d1-5d3d-4e09-9f01-e8a017090b28",
+            "rule": "typescript:S125",
+            "severity": "MAJOR",
+            "component": "myproject:src/components/About.test.tsx",
+            "project": "myproject",
+            "line": 157,
+            "hash": "b976a62aa09240ed47af73e019b8693c",
+            "textRange": {
+                "startLine": 157,
+                "endLine": 158,
+                "startOffset": 2,
+                "endOffset": 65
+            },
+            "flows": [],
+            "status": "OPEN",
+            "message": "Remove this commented out code.",
+            "effort": "5min",
+            "debt": "5min",
+            "author": "ambikarao.pantala@gmail.com",
+            "tags": [
+                "unused"
+            ],
+            "creationDate": "2025-08-05T14:39:24+0530",
+            "updateDate": "2025-11-25T22:37:03+0530",
+            "type": "CODE_SMELL",
+            "scope": "MAIN",
+            "quickFixAvailable": true,
+            "messageFormattings": [],
+            "codeVariants": [],
+            "cleanCodeAttribute": "CLEAR",
+            "cleanCodeAttributeCategory": "INTENTIONAL",
+            "impacts": [
+                {
+                    "softwareQuality": "MAINTAINABILITY",
+                    "severity": "MEDIUM"
+                }
+            ],
+            "issueStatus": "OPEN",
+            "prioritizedRule": false,
+            "fromSonarQubeUpdate": false,
+            "internalTags": []
+        },
+        {
+            "key": "76df31ee-27c0-4653-8ea1-c8ec634586ab",
+            "rule": "typescript:S125",
+            "severity": "MAJOR",
+            "component": "myproject:src/components/About.test.tsx",
+            "project": "myproject",
+            "line": 160,
+            "hash": "b1a970fa6c19597cfd318b0bfe4567ce",
+            "textRange": {
+                "startLine": 160,
+                "endLine": 161,
+                "startOffset": 2,
+                "endOffset": 39
+            },
+            "flows": [],
+            "status": "OPEN",
+            "message": "Remove this commented out code.",
+            "effort": "5min",
+            "debt": "5min",
+            "author": "ambikarao.pantala@gmail.com",
+            "tags": [
+                "unused"
+            ],
+            "creationDate": "2025-08-05T14:39:24+0530",
+            "updateDate": "2025-11-25T22:37:03+0530",
+            "type": "CODE_SMELL",
+            "scope": "MAIN",
+            "quickFixAvailable": true,
+            "messageFormattings": [],
+            "codeVariants": [],
+            "cleanCodeAttribute": "CLEAR",
+            "cleanCodeAttributeCategory": "INTENTIONAL",
+            "impacts": [
+                {
+                    "softwareQuality": "MAINTAINABILITY",
+                    "severity": "MEDIUM"
+                }
+            ],
+            "issueStatus": "OPEN",
+            "prioritizedRule": false,
+            "fromSonarQubeUpdate": false,
+            "internalTags": []
+        },
+        {
+            "key": "1143598c-b839-4d02-a77b-67f675acb988",
+            "rule": "typescript:S125",
+            "severity": "MAJOR",
+            "component": "myproject:src/components/About.test.tsx",
+            "project": "myproject",
+            "line": 172,
+            "hash": "bd8103cf391d498eb4350438c022e5b0",
+            "textRange": {
+                "startLine": 172,
+                "endLine": 174,
+                "startOffset": 2,
+                "endOffset": 60
+            },
+            "flows": [],
+            "status": "OPEN",
+            "message": "Remove this commented out code.",
+            "effort": "5min",
+            "debt": "5min",
+            "author": "ambikarao.pantala@gmail.com",
+            "tags": [
+                "unused"
+            ],
+            "creationDate": "2025-08-05T14:39:24+0530",
+            "updateDate": "2025-11-25T22:37:03+0530",
+            "type": "CODE_SMELL",
+            "scope": "MAIN",
+            "quickFixAvailable": true,
+            "messageFormattings": [],
+            "codeVariants": [],
+            "cleanCodeAttribute": "CLEAR",
+            "cleanCodeAttributeCategory": "INTENTIONAL",
+            "impacts": [
+                {
+                    "softwareQuality": "MAINTAINABILITY",
+                    "severity": "MEDIUM"
+                }
+            ],
+            "issueStatus": "OPEN",
+            "prioritizedRule": false,
+            "fromSonarQubeUpdate": false,
+            "internalTags": []
+        },
+        {
+            "key": "e0c95e9c-d0d3-46a7-9cd4-89cbfe32617e",
+            "rule": "typescript:S125",
+            "severity": "MAJOR",
+            "component": "myproject:src/components/About.test.tsx",
+            "project": "myproject",
+            "line": 176,
+            "hash": "085f567717649a792e22419f87d6d6fb",
+            "textRange": {
+                "startLine": 176,
+                "endLine": 178,
+                "startOffset": 2,
+                "endOffset": 62
+            },
+            "flows": [],
+            "status": "OPEN",
+            "message": "Remove this commented out code.",
+            "effort": "5min",
+            "debt": "5min",
+            "author": "ambikarao.pantala@gmail.com",
+            "tags": [
+                "unused"
+            ],
+            "creationDate": "2025-08-05T14:39:24+0530",
+            "updateDate": "2025-11-25T22:37:03+0530",
+            "type": "CODE_SMELL",
+            "scope": "MAIN",
+            "quickFixAvailable": true,
+            "messageFormattings": [],
+            "codeVariants": [],
+            "cleanCodeAttribute": "CLEAR",
+            "cleanCodeAttributeCategory": "INTENTIONAL",
+            "impacts": [
+                {
+                    "softwareQuality": "MAINTAINABILITY",
+                    "severity": "MEDIUM"
+                }
+            ],
+            "issueStatus": "OPEN",
+            "prioritizedRule": false,
+            "fromSonarQubeUpdate": false,
+            "internalTags": []
+        },
+        {
+            "key": "f2cae9c3-27de-4895-a5e2-80931ac5d567",
+            "rule": "typescript:S125",
+            "severity": "MAJOR",
+            "component": "myproject:src/components/About.test.tsx",
+            "project": "myproject",
+            "line": 180,
+            "hash": "07fe8033048efe0df8945789564b5d01",
+            "textRange": {
+                "startLine": 180,
+                "endLine": 182,
+                "startOffset": 2,
+                "endOffset": 57
+            },
+            "flows": [],
+            "status": "OPEN",
+            "message": "Remove this commented out code.",
+            "effort": "5min",
+            "debt": "5min",
+            "author": "ambikarao.pantala@gmail.com",
+            "tags": [
+                "unused"
+            ],
+            "creationDate": "2025-08-05T14:39:24+0530",
+            "updateDate": "2025-11-25T22:37:03+0530",
+            "type": "CODE_SMELL",
+            "scope": "MAIN",
+            "quickFixAvailable": true,
+            "messageFormattings": [],
+            "codeVariants": [],
+            "cleanCodeAttribute": "CLEAR",
+            "cleanCodeAttributeCategory": "INTENTIONAL",
+            "impacts": [
+                {
+                    "softwareQuality": "MAINTAINABILITY",
+                    "severity": "MEDIUM"
+                }
+            ],
+            "issueStatus": "OPEN",
+            "prioritizedRule": false,
+            "fromSonarQubeUpdate": false,
+            "internalTags": []
+        },
+        {
+            "key": "1fcee116-a99b-4648-8586-fc8b99445421",
+            "rule": "typescript:S125",
+            "severity": "MAJOR",
+            "component": "myproject:src/components/About.test.tsx",
+            "project": "myproject",
+            "line": 184,
+            "hash": "aec3f06a4a22173871c5baf998224495",
+            "textRange": {
+                "startLine": 184,
+                "endLine": 186,
+                "startOffset": 2,
+                "endOffset": 55
+            },
+            "flows": [],
+            "status": "OPEN",
+            "message": "Remove this commented out code.",
+            "effort": "5min",
+            "debt": "5min",
+            "author": "ambikarao.pantala@gmail.com",
+            "tags": [
+                "unused"
+            ],
+            "creationDate": "2025-08-05T14:39:24+0530",
+            "updateDate": "2025-11-25T22:37:03+0530",
+            "type": "CODE_SMELL",
+            "scope": "MAIN",
+            "quickFixAvailable": true,
+            "messageFormattings": [],
+            "codeVariants": [],
+            "cleanCodeAttribute": "CLEAR",
+            "cleanCodeAttributeCategory": "INTENTIONAL",
+            "impacts": [
+                {
+                    "softwareQuality": "MAINTAINABILITY",
+                    "severity": "MEDIUM"
+                }
+            ],
+            "issueStatus": "OPEN",
+            "prioritizedRule": false,
+            "fromSonarQubeUpdate": false,
+            "internalTags": []
+        },
+        {
+            "key": "8013ebc9-4d5e-436c-a270-362cad977625",
+            "rule": "typescript:S1128",
+            "severity": "MINOR",
+            "component": "myproject:src/components/Home.test.tsx",
+            "project": "myproject",
+            "line": 2,
+            "hash": "c32704a78b8f28ec71fd323abb8d6924",
+            "textRange": {
+                "startLine": 2,
+                "endLine": 2,
+                "startOffset": 25,
+                "endOffset": 34
+            },
+            "flows": [],
+            "status": "OPEN",
+            "message": "Remove this unused import of \u0027fireEvent\u0027.",
+            "effort": "1min",
+            "debt": "1min",
+            "author": "ambikarao.pantala@gmail.com",
+            "tags": [
+                "es2015",
+                "type-dependent",
+                "unused"
+            ],
+            "creationDate": "2025-08-05T14:39:24+0530",
+            "updateDate": "2025-11-28T09:13:48+0530",
+            "type": "CODE_SMELL",
+            "scope": "MAIN",
+            "quickFixAvailable": true,
+            "messageFormattings": [],
+            "codeVariants": [],
+            "cleanCodeAttribute": "CLEAR",
+            "cleanCodeAttributeCategory": "INTENTIONAL",
+            "impacts": [
+                {
+                    "softwareQuality": "MAINTAINABILITY",
+                    "severity": "LOW"
+                }
+            ],
+            "issueStatus": "OPEN",
+            "prioritizedRule": false,
+            "fromSonarQubeUpdate": false,
+            "internalTags": []
+        },
+        {
+            "key": "d3928ea2-e21c-4a62-8a12-e19633fe947b",
+            "rule": "typescript:S125",
+            "severity": "MAJOR",
+            "component": "myproject:src/components/Home.test.tsx",
+            "project": "myproject",
+            "line": 34,
+            "hash": "469a02ed894267b483950015a5746f6e",
+            "textRange": {
+                "startLine": 34,
+                "endLine": 38,
+                "startOffset": 2,
+                "endOffset": 80
+            },
+            "flows": [],
+            "status": "OPEN",
+            "message": "Remove this commented out code.",
+            "effort": "5min",
+            "debt": "5min",
+            "author": "ambikarao.pantala@gmail.com",
+            "tags": [
+                "unused"
+            ],
+            "creationDate": "2025-08-05T14:39:24+0530",
+            "updateDate": "2025-11-28T09:13:48+0530",
+            "type": "CODE_SMELL",
+            "scope": "MAIN",
+            "quickFixAvailable": true,
+            "messageFormattings": [],
+            "codeVariants": [],
+            "cleanCodeAttribute": "CLEAR",
+            "cleanCodeAttributeCategory": "INTENTIONAL",
+            "impacts": [
+                {
+                    "softwareQuality": "MAINTAINABILITY",
+                    "severity": "MEDIUM"
+                }
+            ],
+            "issueStatus": "OPEN",
+            "prioritizedRule": false,
+            "fromSonarQubeUpdate": false,
+            "internalTags": []
+        },
+        {
+            "key": "c87f47d2-cc20-493d-b6ed-0490fff883c6",
+            "rule": "typescript:S125",
+            "severity": "MAJOR",
+            "component": "myproject:src/components/Home.test.tsx",
+            "project": "myproject",
+            "line": 56,
+            "hash": "dcc481cbe56e42295a4eeaf7e6424600",
+            "textRange": {
+                "startLine": 56,
+                "endLine": 59,
+                "startOffset": 2,
+                "endOffset": 51
+            },
+            "flows": [],
+            "status": "OPEN",
+            "message": "Remove this commented out code.",
+            "effort": "5min",
+            "debt": "5min",
+            "author": "ambikarao.pantala@gmail.com",
+            "tags": [
+                "unused"
+            ],
+            "creationDate": "2025-08-05T14:39:24+0530",
+            "updateDate": "2025-11-28T09:13:48+0530",
+            "type": "CODE_SMELL",
+            "scope": "MAIN",
+            "quickFixAvailable": true,
+            "messageFormattings": [],
+            "codeVariants": [],
+            "cleanCodeAttribute": "CLEAR",
+            "cleanCodeAttributeCategory": "INTENTIONAL",
+            "impacts": [
+                {
+                    "softwareQuality": "MAINTAINABILITY",
+                    "severity": "MEDIUM"
+                }
+            ],
+            "issueStatus": "OPEN",
+            "prioritizedRule": false,
+            "fromSonarQubeUpdate": false,
+            "internalTags": []
+        },
+        {
+            "key": "b26fd0cc-de5e-4115-a334-16f403943e3c",
+            "rule": "typescript:S125",
+            "severity": "MAJOR",
+            "component": "myproject:src/components/Home.test.tsx",
+            "project": "myproject",
+            "line": 80,
+            "hash": "6788b548aeac61f0ff3c4ef8afc8eab7",
+            "textRange": {
+                "startLine": 80,
+                "endLine": 81,
+                "startOffset": 2,
+                "endOffset": 59
+            },
+            "flows": [],
+            "status": "OPEN",
+            "message": "Remove this commented out code.",
+            "effort": "5min",
+            "debt": "5min",
+            "author": "ambikarao.pantala@gmail.com",
+            "tags": [
+                "unused"
+            ],
+            "creationDate": "2025-08-05T14:39:24+0530",
+            "updateDate": "2025-11-28T09:13:48+0530",
+            "type": "CODE_SMELL",
+            "scope": "MAIN",
+            "quickFixAvailable": true,
+            "messageFormattings": [],
+            "codeVariants": [],
+            "cleanCodeAttribute": "CLEAR",
+            "cleanCodeAttributeCategory": "INTENTIONAL",
+            "impacts": [
+                {
+                    "softwareQuality": "MAINTAINABILITY",
+                    "severity": "MEDIUM"
+                }
+            ],
+            "issueStatus": "OPEN",
+            "prioritizedRule": false,
+            "fromSonarQubeUpdate": false,
+            "internalTags": []
+        },
+        {
+            "key": "6f82eb1e-6bc8-4a0a-a2dc-829b9eb83da4",
+            "rule": "typescript:S125",
+            "severity": "MAJOR",
+            "component": "myproject:src/components/Home.test.tsx",
+            "project": "myproject",
+            "line": 83,
+            "hash": "7ff623016d5e082eb0f560db7395839a",
+            "textRange": {
+                "startLine": 83,
+                "endLine": 84,
+                "startOffset": 2,
+                "endOffset": 36
+            },
+            "flows": [],
+            "status": "OPEN",
+            "message": "Remove this commented out code.",
+            "effort": "5min",
+            "debt": "5min",
+            "author": "ambikarao.pantala@gmail.com",
+            "tags": [
+                "unused"
+            ],
+            "creationDate": "2025-08-05T14:39:24+0530",
+            "updateDate": "2025-11-28T09:13:48+0530",
+            "type": "CODE_SMELL",
+            "scope": "MAIN",
+            "quickFixAvailable": true,
+            "messageFormattings": [],
+            "codeVariants": [],
+            "cleanCodeAttribute": "CLEAR",
+            "cleanCodeAttributeCategory": "INTENTIONAL",
+            "impacts": [
+                {
+                    "softwareQuality": "MAINTAINABILITY",
+                    "severity": "MEDIUM"
+                }
+            ],
+            "issueStatus": "OPEN",
+            "prioritizedRule": false,
+            "fromSonarQubeUpdate": false,
+            "internalTags": []
+        },
+        {
+            "key": "a458d267-0a7f-486d-8006-3b4c686ff6d2",
+            "rule": "typescript:S125",
+            "severity": "MAJOR",
+            "component": "myproject:src/components/Home.test.tsx",
+            "project": "myproject",
+            "line": 95,
+            "hash": "bd8103cf391d498eb4350438c022e5b0",
+            "textRange": {
+                "startLine": 95,
+                "endLine": 97,
+                "startOffset": 2,
+                "endOffset": 59
+            },
+            "flows": [],
+            "status": "OPEN",
+            "message": "Remove this commented out code.",
+            "effort": "5min",
+            "debt": "5min",
+            "author": "ambikarao.pantala@gmail.com",
+            "tags": [
+                "unused"
+            ],
+            "creationDate": "2025-08-05T14:39:24+0530",
+            "updateDate": "2025-11-28T09:13:48+0530",
+            "type": "CODE_SMELL",
+            "scope": "MAIN",
+            "quickFixAvailable": true,
+            "messageFormattings": [],
+            "codeVariants": [],
+            "cleanCodeAttribute": "CLEAR",
+            "cleanCodeAttributeCategory": "INTENTIONAL",
+            "impacts": [
+                {
+                    "softwareQuality": "MAINTAINABILITY",
+                    "severity": "MEDIUM"
+                }
+            ],
+            "issueStatus": "OPEN",
+            "prioritizedRule": false,
+            "fromSonarQubeUpdate": false,
+            "internalTags": []
+        },
+        {
+            "key": "dbe63440-da24-4862-9b2c-1009e45b6cb1",
+            "rule": "typescript:S125",
+            "severity": "MAJOR",
+            "component": "myproject:src/components/Home.test.tsx",
+            "project": "myproject",
+            "line": 99,
+            "hash": "085f567717649a792e22419f87d6d6fb",
+            "textRange": {
+                "startLine": 99,
+                "endLine": 101,
+                "startOffset": 2,
+                "endOffset": 62
+            },
+            "flows": [],
+            "status": "OPEN",
+            "message": "Remove this commented out code.",
+            "effort": "5min",
+            "debt": "5min",
+            "author": "ambikarao.pantala@gmail.com",
+            "tags": [
+                "unused"
+            ],
+            "creationDate": "2025-08-05T14:39:24+0530",
+            "updateDate": "2025-11-28T09:13:48+0530",
+            "type": "CODE_SMELL",
+            "scope": "MAIN",
+            "quickFixAvailable": true,
+            "messageFormattings": [],
+            "codeVariants": [],
+            "cleanCodeAttribute": "CLEAR",
+            "cleanCodeAttributeCategory": "INTENTIONAL",
+            "impacts": [
+                {
+                    "softwareQuality": "MAINTAINABILITY",
+                    "severity": "MEDIUM"
+                }
+            ],
+            "issueStatus": "OPEN",
+            "prioritizedRule": false,
+            "fromSonarQubeUpdate": false,
+            "internalTags": []
+        },
+        {
+            "key": "def76300-0d7e-4026-b586-d1db099b998b",
+            "rule": "typescript:S3863",
+            "severity": "MINOR",
+            "component": "myproject:src/components/Products.tsx",
+            "project": "myproject",
+            "line": 2,
+            "hash": "c962ce9d6fe0ccbdb6aae3d57e5b2274",
+            "textRange": {
+                "startLine": 2,
+                "endLine": 2,
+                "startOffset": 28,
+                "endOffset": 46
+            },
+            "flows": [],
+            "status": "OPEN",
+            "message": "\u0027C:\\Users\\ShaikArafath\\Documents\\code-coverage-analysis-1\\node_modules\\react-router-dom\\dist\\index.mjs\u0027 imported multiple times.",
+            "effort": "1min",
+            "debt": "1min",
+            "author": "ambikarao.pantala@gmail.com",
+            "tags": [
+                "es2015"
+            ],
+            "creationDate": "2025-08-05T14:39:24+0530",
+            "updateDate": "2025-11-28T09:13:48+0530",
+            "type": "CODE_SMELL",
+            "scope": "MAIN",
+            "quickFixAvailable": true,
+            "messageFormattings": [],
+            "codeVariants": [],
+            "cleanCodeAttribute": "CONVENTIONAL",
+            "cleanCodeAttributeCategory": "CONSISTENT",
+            "impacts": [
+                {
+                    "softwareQuality": "MAINTAINABILITY",
+                    "severity": "LOW"
+                }
+            ],
+            "issueStatus": "OPEN",
+            "prioritizedRule": false,
+            "fromSonarQubeUpdate": false,
+            "internalTags": []
+        },
+        {
+            "key": "afecf2ed-0335-4f85-bbb4-de405b39c1d4",
+            "rule": "typescript:S7735",
+            "severity": "MINOR",
+            "component": "myproject:src/components/Products.tsx",
+            "project": "myproject",
+            "line": 71,
+            "hash": "5f76147454d351b491ad5477303569e6",
+            "textRange": {
+                "startLine": 71,
+                "endLine": 71,
+                "startOffset": 59,
+                "endOffset": 75
+            },
+            "flows": [],
+            "status": "OPEN",
+            "message": "Unexpected negated condition.",
+            "effort": "2min",
+            "debt": "2min",
+            "author": "ambikarao.pantala@gmail.com",
+            "tags": [
+                "readability"
+            ],
+            "creationDate": "2025-08-05T14:39:24+0530",
+            "updateDate": "2025-11-28T09:13:48+0530",
+            "type": "CODE_SMELL",
+            "scope": "MAIN",
+            "quickFixAvailable": true,
+            "messageFormattings": [],
+            "codeVariants": [],
+            "cleanCodeAttribute": "CLEAR",
+            "cleanCodeAttributeCategory": "INTENTIONAL",
+            "impacts": [
+                {
+                    "softwareQuality": "MAINTAINABILITY",
+                    "severity": "LOW"
+                }
+            ],
+            "issueStatus": "OPEN",
+            "prioritizedRule": false,
+            "fromSonarQubeUpdate": false,
+            "internalTags": []
+        },
+        {
+            "key": "707537a0-d3ce-4e51-a38b-25df5f32af4b",
+            "rule": "typescript:S7732",
+            "severity": "MINOR",
+            "component": "myproject:src/reportWebVitals.ts",
+            "project": "myproject",
+            "line": 4,
+            "hash": "3c9749fcb92f545a8c753e00920b1884",
+            "textRange": {
+                "startLine": 4,
+                "endLine": 4,
+                "startOffset": 21,
+                "endOffset": 52
+            },
+            "flows": [],
+            "status": "OPEN",
+            "message": "Avoid using `instanceof` for type checking as it can lead to unreliable results.",
+            "effort": "5min",
+            "debt": "5min",
+            "author": "ambikarao.pantala@gmail.com",
+            "tags": [
+                "cross-browser"
+            ],
+            "creationDate": "2025-08-05T14:39:24+0530",
+            "updateDate": "2025-11-28T09:13:48+0530",
+            "type": "CODE_SMELL",
+            "scope": "MAIN",
+            "quickFixAvailable": false,
+            "messageFormattings": [],
+            "codeVariants": [],
+            "cleanCodeAttribute": "CLEAR",
+            "cleanCodeAttributeCategory": "INTENTIONAL",
+            "impacts": [
+                {
+                    "softwareQuality": "MAINTAINABILITY",
+                    "severity": "LOW"
+                },
+                {
+                    "softwareQuality": "RELIABILITY",
+                    "severity": "LOW"
+                }
+            ],
+            "issueStatus": "OPEN",
+            "prioritizedRule": false,
+            "fromSonarQubeUpdate": false,
+            "internalTags": []
+        }
+    ],
+    "components": [
+        {
+            "key": "myproject:src/components/AppHeader.tsx",
+            "enabled": true,
+            "qualifier": "FIL",
+            "name": "AppHeader.tsx",
+            "longName": "src/components/AppHeader.tsx",
+            "path": "src/components/AppHeader.tsx"
+        },
+        {
+            "key": "myproject",
+            "enabled": true,
+            "qualifier": "TRK",
+            "name": "myproject",
+            "longName": "myproject"
+        },
+        {
+            "key": "myproject:src/components/CategoryScreen.tsx",
+            "enabled": true,
+            "qualifier": "FIL",
+            "name": "CategoryScreen.tsx",
+            "longName": "src/components/CategoryScreen.tsx",
+            "path": "src/components/CategoryScreen.tsx"
+        },
+        {
+            "key": "myproject:src/components/Products.tsx",
+            "enabled": true,
+            "qualifier": "FIL",
+            "name": "Products.tsx",
+            "longName": "src/components/Products.tsx",
+            "path": "src/components/Products.tsx"
+        },
+        {
+            "key": "myproject:src/App.tsx",
+            "enabled": true,
+            "qualifier": "FIL",
+            "name": "App.tsx",
+            "longName": "src/App.tsx",
+            "path": "src/App.tsx"
+        },
+        {
+            "key": "myproject:src/components/FAQ.tsx",
+            "enabled": true,
+            "qualifier": "FIL",
+            "name": "FAQ.tsx",
+            "longName": "src/components/FAQ.tsx",
+            "path": "src/components/FAQ.tsx"
+        },
+        {
+            "key": "myproject:src/components/ProfileScreen.tsx",
+            "enabled": true,
+            "qualifier": "FIL",
+            "name": "ProfileScreen.tsx",
+            "longName": "src/components/ProfileScreen.tsx",
+            "path": "src/components/ProfileScreen.tsx"
+        },
+        {
+            "key": "myproject:src/reportWebVitals.ts",
+            "enabled": true,
+            "qualifier": "FIL",
+            "name": "reportWebVitals.ts",
+            "longName": "src/reportWebVitals.ts",
+            "path": "src/reportWebVitals.ts"
+        },
+        {
+            "key": "myproject:src/components/CartSummary.tsx",
+            "enabled": true,
+            "qualifier": "FIL",
+            "name": "CartSummary.tsx",
+            "longName": "src/components/CartSummary.tsx",
+            "path": "src/components/CartSummary.tsx"
+        },
+        {
+            "key": "myproject:src/components/CartScreen.tsx",
+            "enabled": true,
+            "qualifier": "FIL",
+            "name": "CartScreen.tsx",
+            "longName": "src/components/CartScreen.tsx",
+            "path": "src/components/CartScreen.tsx"
+        },
+        {
+            "key": "myproject:src/CartContext.tsx",
+            "enabled": true,
+            "qualifier": "FIL",
+            "name": "CartContext.tsx",
+            "longName": "src/CartContext.tsx",
+            "path": "src/CartContext.tsx"
+        },
+        {
+            "key": "myproject:src/App.css",
+            "enabled": true,
+            "qualifier": "FIL",
+            "name": "App.css",
+            "longName": "src/App.css",
+            "path": "src/App.css"
+        },
+        {
+            "key": "myproject:src/components/Home.test.tsx",
+            "enabled": true,
+            "qualifier": "FIL",
+            "name": "Home.test.tsx",
+            "longName": "src/components/Home.test.tsx",
+            "path": "src/components/Home.test.tsx"
+        },
+        {
+            "key": "myproject:src/components/About.test.tsx",
+            "enabled": true,
+            "qualifier": "FIL",
+            "name": "About.test.tsx",
+            "longName": "src/components/About.test.tsx",
+            "path": "src/components/About.test.tsx"
+        },
+        {
+            "key": "myproject:src/reportWebVitals.test.ts",
+            "enabled": true,
+            "qualifier": "FIL",
+            "name": "reportWebVitals.test.ts",
+            "longName": "src/reportWebVitals.test.ts",
+            "path": "src/reportWebVitals.test.ts"
+        },
+        {
+            "key": "myproject:src/index.test.tsx",
+            "enabled": true,
+            "qualifier": "FIL",
+            "name": "index.test.tsx",
+            "longName": "src/index.test.tsx",
+            "path": "src/index.test.tsx"
+        }
+    ],
+    "facets": []
+}
